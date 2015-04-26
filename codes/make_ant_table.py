@@ -1,4 +1,7 @@
 #!/usr/bin/env python
+#
+#python  make_ant_table.py --layout KAT7_layout.txt --tname newKAT7_Ant_Table 
+#
 import shutil
 import sys
 import os 
@@ -13,7 +16,7 @@ def create_table (ndim=None,name=None):
     mnt = makescacoldesc("MOUNT", "aa")
     flg = makescacoldesc("FLAG_ROW", False)
     pos = makearrcoldesc("POSITION", 1.0, 0, [3])
-    dish_diam = makescacoldesc("DISH_DIAMETER", 1.0)
+    dish_diam = makescacoldesc("DISH_DIAMETER", 12.0)
     td = maketabdesc([names,off_set,statn,typ,mnt,pos,dish_diam,flg])
     t = table(name,td,nrow=ndim)
     return t
@@ -104,3 +107,5 @@ if __name__=="__main__" :
 		#plt.hist(uvDist,bins=100,log=True,color="red")
 		#plt.title(msname)
 		#plt.show()
+		#
+		#make_ant_table.fill_table(tname="ANTENNASTABLEKUNTUNE",xy_file='vlba_kuntunse.txt')
