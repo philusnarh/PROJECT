@@ -1,0 +1,14 @@
+git init 
+
+git status
+
+git add newfiledirectory
+
+git  commit -am 'power spectrum update'
+
+git push origin master 
+
+username: philusnarh@gmail.com
+
+password: t8@@##()/
+
