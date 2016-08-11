@@ -210,8 +210,8 @@ def run_test():
 	    		 str(station_num)))
 	    		 		    	
 	    		fv2 = figur(2, 12, 12, 70)
-	    		Jones_image(fv2, beam_header, 2, 2, 4 , beam_data_ph, '%s_S%s_2x2_Jones1_Imag_Image.png' %(beam_image1,\
-	    		str(station_num)))
+	    		Jones_image(fv2, beam_header, 2, 2, 4 , beam_data_ph, '%s_S%s_2x2_Jones1_Imag_Image.png'\
+	    		%(beam_image1, str(station_num)))
 		
 			beam_file = '%s/%s_S%s_mueller_beam.fits' %(beam_dir1, beam1_start_filename, str(station_num).zfill(4)) 
 			hdu1 = openFitsFile('%s' %(beam_file)) 			
@@ -223,8 +223,8 @@ def run_test():
 				pyfits.writeto('%s_S%s_mueller_4_x_4_beam1.fits' %(beam_image1, str(station_num).zfill(4)), \
 				mueller_beam1, header = beam_header, clobber=True)
 			
-		    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam1, '%s_S%s_Meuller_4_X_4_Images1.png' %(beam_image1, \
-		    	str(station_num).zfill(4)))
+		    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam1, '%s_S%s_Meuller_4_X_4_Images1.png' \
+		    	%(beam_image1, str(station_num).zfill(4)))
 		    	
 		    	
 		    	# +++++++++++++++++++++++	SECOND PART 	+++++++++++++++++++++++++++++++++++++++
@@ -247,8 +247,9 @@ def run_test():
 		
 				#	Plot Jones terms
 				fv1 = figur(1, 12, 12, 70)
-		    		Jones_image(fv1, beam_header, 2, 2, 4 ,  beam_data_amp, '%s_S%s_2x2_Jones2_Real_Images.png' %(beam_image2,\
-		    		 str(station_num).zfill(4)))		    	
+		    		Jones_image(fv1, beam_header, 2, 2, 4 ,  beam_data_amp, '%s_S%s_2x2_Jones2_Real_Images.png'\
+		    		%(beam_image2, str(station_num).zfill(4)))
+		    				    	
 		    		fv2 = figur(2, 12, 12, 70)
 		    		Jones_image(fv2, beam_header, 2, 2, 4 , beam_data_ph, '%s_S%s_2x2_Jones2_Imag_Images2.png' %(beam_image2, \
 		    		str(station_num).zfill(4)))
@@ -264,8 +265,8 @@ def run_test():
 					pyfits.writeto('%s_S%s_mueller_4_x_4_beam2.fits' %(beam2_start_filename, str(station_num).zfill(4)),\
 					 mueller_beam2, header = beam_header, clobber=True)
 					 
-			    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam2, '%s_S%s_4x4_Meuller_Images.png' %(beam_image2, \
-			    	str(station_num).zfill(4)))
+			    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam2, '%s_S%s_4x4_Meuller_Images.png' \
+			    	%(beam_image2, str(station_num).zfill(4)))
 			    	
 			    	diff_beam = mueller_beam1 - mueller_beam2
 			    	
@@ -273,12 +274,12 @@ def run_test():
 			    	
 			    	if save_fits == 'yes':
 			    	
-			    		pyfits.writeto('%s_S%s_mueller_4_x_4_beam.fits' %(beam_diffname, str(station_num).zfill(4)), diff_beam,\
-			    		header = beam_header, clobber=True)
+			    		pyfits.writeto('%s_S%s_mueller_4_x_4_beam.fits' %(beam_diffname, \
+			    		str(station_num).zfill(4)), diff_beam, header = beam_header, clobber=True)
 			    		
 			    	fv1 = figur(4, 12, 12, 80)
-			    	Mueller_image(fv1, beam_header, 4, 4, 16 , diff_beam, '%s_S%s_4x4_Meuller_Images.png' %(beam_image2, \
-			    	str(station_num).zfill(4)))
+			    	Mueller_image(fv1, beam_header, 4, 4, 16 , diff_beam, '%s_S%s_4x4_Meuller_Images.png' \
+			    	%(beam_image2, str(station_num).zfill(4)))
 			    	
 		    	
 		    	os.system('rm -f Eampl.fits Ephase.fits')
