@@ -206,14 +206,16 @@ def run_test():
 		
 			#	Plot Jones terms
 			fv1 = figur(1, 12, 12, 70)
-	    		Jones_image(fv1, beam_header, 2, 2, 4 ,  beam_data_amp, '%s_S%s_2x2_Jones1_Real_Image.png' %(beam_image1,\
-	    		 str(station_num)))
+	    		Jones_image(fv1, beam_header, 2, 2, 4 ,  beam_data_amp, '%s_S%s_2x2_Jones1_Real_Image.png'\
+	    		%(beam_image1, str(station_num)))
 	    		 		    	
 	    		fv2 = figur(2, 12, 12, 70)
 	    		Jones_image(fv2, beam_header, 2, 2, 4 , beam_data_ph, '%s_S%s_2x2_Jones1_Imag_Image.png'\
 	    		%(beam_image1, str(station_num)))
 		
-			beam_file = '%s/%s_S%s_mueller_beam.fits' %(beam_dir1, beam1_start_filename, str(station_num).zfill(4)) 
+			beam_file = '%s/%s_S%s_mueller_beam.fits' %(beam_dir1, beam1_start_filename, \
+			str(station_num).zfill(4)) 
+			
 			hdu1 = openFitsFile('%s' %(beam_file)) 			
 			mueller_beam1 = hdu1[0].data[chan_num]      
 			fv1 = figur(3, 12, 12, 80)
