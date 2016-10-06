@@ -154,21 +154,27 @@ def feed_angle_displacement(input_directory, sub_directory, uniform_error, alpha
 	
 	
 	if uniform_error == 'false':
-		print "\n >> Introducing random feed angle displacement per station:"		
+		print "\n >> Introducing different systematic feed angle displacement per station:"		
 		for iter in xrange(n_antenna):	
-			feed_x =  np.random.uniform(0, alpha_x, shape[0]) 			
-			feed_y =  np.random.uniform(0, alpha_y, shape[0]) 
-			save_error_xy = 'feed_angle.txt'
-			np.savetxt('%s' %(save_error_xy), np.array([feed_x, feed_y]).T, delimiter = ',')			
-			os.system('mv -f %s  %s/%s%s ' %(save_error_xy, input_directory, sub_directory, str(iter).zfill(4)))
+			feed_x =  np.repeat(alpha_x, shape[0]) 	+ np.random.uniform(alpha_x, alpha_y, 1)			#np.random.uniform(0, alpha_x, shape[0]) 			
+			feed_y =  np.repeat(alpha_y, shape[0]) 	+ np.random.uniform(alpha_x, alpha_y, 1)
+			save_error_x = 'feed_angle_x.txt'
+			save_error_y = 'feed_angle_y.txt'
+			np.savetxt('%s' %(save_error_x), np.array([feed_x]).T, delimiter = ',')
+			np.savetxt('%s' %(save_error_y), np.array([feed_y]).T, delimiter = ',')			
+			os.system('mv -f %s %s %s/%s%s ' %(save_error_x, save_error_y, input_directory, sub_directory, str(iter).zfill(4)))
 			#
 	else:
-		print "\n >> Introducing identical feed angle displacement for all stations:"	
-		feed_x =  np.random.uniform(0, alpha_x, shape[0]) 			
-		feed_y =  np.random.uniform(0, alpha_y, shape[0]) 
-		save_error_xy = 'feed_angle.txt'	
-		np.savetxt('%s' %(save_error_xy), np.array([feed_x, feed_y]).T, delimiter = ',')
-		os.system('echo %s/%s* | xargs -n 1 cp %s -f' %(input_directory, sub_directory, save_error_xy))
+		print "\n >> Introducing identical systematic feed angle displacement for all stations:"	
+		feed_x =  np.repeat(alpha_x, shape[0]) 	+ np.random.uniform(alpha_x, alpha_y, 1)			#np.random.uniform(0, alpha_x, shape[0]) 			
+		feed_y =  np.repeat(alpha_y, shape[0]) 	+ np.random.uniform(alpha_x, alpha_y, 1)
+		save_error_x = 'feed_angle_x.txt'
+		save_error_y = 'feed_angle_y.txt'
+		np.savetxt('%s' %(save_error_x), np.array([feed_x]).T, delimiter = ',')
+		np.savetxt('%s' %(save_error_y), np.array([feed_y]).T, delimiter = ',')		
+		os.system('echo %s/%s* | xargs -n 1 cp %s -f' %(input_directory, sub_directory, save_error_x))
+		os.system('echo %s/%s* | xargs -n 1 cp %s -f' %(input_directory, sub_directory, save_error_y))
+		os.system('rm %s %s ' %(save_error_x, save_error_y))
 		#
 	
 	return None
@@ -352,8 +358,8 @@ def run_dish_sim_model():
 			 		     phase_off = xx_1 , time_gain_std = xx_2, time_phase_std = xx_3, n_antenna = num_ant)
 	
 		if config.get('distort_antenna-layout', 'introduce_feed_displacement', 1) == 'true':
-			f_x = float(config.get('distort_antenna-layout', 'feed_angle_X_deg', 1))		
-			f_y = float(config.get('distort_antenna-layout', 'feed_angle_Y_deg', 1))
+			f_x = float(config.get('distort_antenna-layout', 'systematic_error_feed_angle_X_deg', 1))		
+			f_y = float(config.get('distort_antenna-layout', 'systematic_error_feed_angle_Y_deg', 1))
 			
 			err_type = config.get('distort_antenna-layout', 'add_uniform_feed_displacement', 1)
 			

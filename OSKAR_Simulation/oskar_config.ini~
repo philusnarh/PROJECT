@@ -3,7 +3,7 @@ version=2.6.0
 
 [simulator]
 double_precision=true
-max_sources_per_chunk=1024
+max_sources_per_chunk=128
 write_status_to_log_file=true
 keep_log_file=true
 
@@ -21,20 +21,20 @@ common_flux_filter\flux_max=1
 output_text_file=sky_model.txt
 
 [observation]
-num_channels=6
+num_channels=1
 start_frequency_hz=1000000000.000000
-frequency_inc_hz=50e06
+frequency_inc_hz=10e06
 phase_centre_ra_deg=0
 phase_centre_dec_deg=-30
 num_time_steps=1
-start_time_utc=01-01-2001 15:00:00.000
-%23start_time_utc=11-01-2000 15:00:00.000
-length=00:40:00.000
+%23start_time_utc=01-01-2001 14:00:00.000
+start_time_utc=11-01-2000 15:00:00.000
+length=01:17:00.000
 
 [telescope]
 longitude_deg=21
 latitude_deg=-30
-%23aperture_array\element_pattern\enable_numerical=true
+aperture_array\element_pattern\enable_numerical=true
 input_directory=./telescope.tm/
 altitude_m=1038
 station_type=Aperture array
@@ -47,8 +47,6 @@ aperture_array\element_pattern\functional_type=Dipole
 aperture_array\element_pattern\dipole_length=0.3
 aperture_array\element_pattern\dipole_length_units=Wavelength
 %23aperture_array\element_pattern\taper\type=Cosine
-%23aperture_array\array_pattern\element\x_orientation_error_deg=0
-%23aperture_array\array_pattern\element\y_orientation_error_deg=1
 
 [interferometer]
 oskar_vis_filename=example.vis

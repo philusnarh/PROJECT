@@ -85,13 +85,21 @@ def Mueller_image(fig, header, nrows, ncols, i , Mueller_matrix, figname):
 		   orientation = "horizontal") 
 		    
 		   cax2[i].xaxis.set_ticks_position("bottom") 
+		   
 		    
 		else:
 		   plt.colorbar(im, cax=cax2[i], format = '%.0e', ticks = [np.min(channel), np.max(channel)],\
 		   orientation = "horizontal")
 		   
-		   cax2[i].xaxis.set_ticks_position("bottom")  
+		   cax2[i].xaxis.set_ticks_position("bottom") 
+		ax.axis["bottom"].major_ticklabels.set(fontsize=15)
+		ax.axis["left"].major_ticklabels.set(fontsize=15)
+		#ax.axis[:].major_ticks.set_tick_out(True)
+		#ax.axis[:].major_ticks.set_ticksize(30)
+		#plt.rc('xtick', labelsize=20)
+		#plt.rc('ytick', labelsize=20)
 		images.append(im)
+	    
 	    plt.savefig(figname)
 	    
 	    return None 
@@ -202,13 +210,18 @@ def run_test():
 			hdu = openFitsFile('%s' %(beam_ph))
 			beam_data_ph = hdu[0].data
 			beam_header = headers('%s' %beam_ph) 
-			
+						
 		
-			#	Plot Jones terms
+			#	Plot Jones terms 1
 			fv1 = figur(1, 12, 12, 70)
 	    		Jones_image(fv1, beam_header, 2, 2, 4 ,  beam_data_amp, '%s_S%s_2x2_Jones1_Real_Image.png'\
 	    		%(beam_image1, str(station_num)))
-	    		 		    	
+	    		"""plt.figure(1);plt.imshow(beam_data_amp[1,:,:]) 
+	    		plt.colorbar()
+	    		plt.figure(2);plt.imshow(beam_data_amp[2,:,:] - beam_data_amp[1,:,:])
+	    		plt.colorbar()
+	    		plt.show()"""
+	    		#	2 		    	
 	    		fv2 = figur(2, 12, 12, 70)
 	    		Jones_image(fv2, beam_header, 2, 2, 4 , beam_data_ph, '%s_S%s_2x2_Jones1_Imag_Image.png'\
 	    		%(beam_image1, str(station_num)))
@@ -218,15 +231,46 @@ def run_test():
 			
 			hdu1 = openFitsFile('%s' %(beam_file)) 			
 			mueller_beam1 = hdu1[0].data[chan_num]      
-			fv1 = figur(3, 12, 12, 80)
+			
 		
 			if save_fits == 'yes':
 			
 				pyfits.writeto('%s_S%s_mueller_4_x_4_beam1.fits' %(beam_image1, str(station_num).zfill(4)), \
 				mueller_beam1, header = beam_header, clobber=True)
 			
-		    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam1, '%s_S%s_Meuller_4_X_4_Images1.png' \
-		    	%(beam_image1, str(station_num).zfill(4)))
+		    	#			3
+		    	fv1 = figur(3, 12, 12, 80)
+		    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam1, '%s_S%s_Meuller_4_X_4_Images1.png' 
+		    		      %(beam_image1, str(station_num).zfill(4)))
+		    		      
+    		        # 	1D
+    		        if config.get('plot_beam_image', 'plot_1D\mueller_image', 1) == 'yes':
+			    	#plt.figure(figsize = (4,4))
+			    	
+			    	image_size = int(config.get('plot_beam_image', 'beam_image\size', 1))
+			    	
+			    	image_fov = int(config.get('plot_beam_image', 'beam_image_fov\deg', 1))
+			    	
+			    	sx = np.linspace(-image_fov/2., image_fov/2., image_size)
+			    	fig = figur(7, 12, 12, 70)
+			    	import matplotlib.ticker as mtick
+			    	for i in range(16):
+					ax = plt.subplot(4,4,i+1)
+					# Set y logaritmic
+					#ax.set_yscale('log')
+					ax.yaxis.set_major_formatter(mtick.ScalarFormatter(useMathText=True))
+					if i in [0, 5, 10, 15]:	#% 2 == 0:
+						ax.plot(sx, np.sqrt(mueller_beam1[i].diagonal()))
+					else:
+				    		ax.plot(sx, mueller_beam1[i].diagonal())
+		    		# Set common labels
+				#ax.set_xlabel('angular size / $[deg]$')
+				#ax.set_ylabel('Normalized Beam Power')
+				#
+				fig.text(0.5, 0.04, 'angular size / $[deg]$', ha='center', fontsize="20")
+				fig.text(0.04, 0.5, 'Normalized Beam Power', va='center', rotation='vertical', fontsize="20")
+		    		fig.savefig('tru_1d_S%s.png' %str(station_num).zfill(4)); fig.clear()
+	    		      
 		    	
 		    	
 		    	# +++++++++++++++++++++++	SECOND PART 	+++++++++++++++++++++++++++++++++++++++
@@ -235,7 +279,8 @@ def run_test():
 		    	
 			    	beam_dir2 = config.get('plot_beam_image', 'beam_2\input_directoy', 1)
 			    	beam2_start_filename = config.get('plot_beam_image', 'beam_2_start_name', 1)
-			    	beam_diffname = config.get('plot_beam_image', 'beam_error\image_nam', 1)
+			    	beam_diffname = config.get('plot_beam_image', 'beam_error\image_name', 1)
+			    	beam_image2 = config.get('plot_beam_image', 'beam_2\image_name', 1)
 			    	
 			    	#	Extract Jones terms in amplitude & phase
 				jones_filename(beam_dir2, beam2_start_filename, station_num, chan_num)		
@@ -247,41 +292,75 @@ def run_test():
 				beam_data_ph = hdu[0].data
 				beam_header = headers('%s' %beam_ph)		
 		
-				#	Plot Jones terms
+				#	Plot Jones terms	4
 				fv1 = figur(1, 12, 12, 70)
 		    		Jones_image(fv1, beam_header, 2, 2, 4 ,  beam_data_amp, '%s_S%s_2x2_Jones2_Real_Images.png'\
 		    		%(beam_image2, str(station_num).zfill(4)))
-		    				    	
+		    		
+		    		#	5	    	
 		    		fv2 = figur(2, 12, 12, 70)
 		    		Jones_image(fv2, beam_header, 2, 2, 4 , beam_data_ph, '%s_S%s_2x2_Jones2_Imag_Images2.png' %(beam_image2, \
 		    		str(station_num).zfill(4)))
 			 	
-			 	#	Plot Jones terms
+			 	
+			 	
+			 	#	Mueller terms
 				beam_file = '%s/%s_S%s_mueller_beam.fits' %(beam_dir2, beam2_start_filename, str(station_num).zfill(4)) 
-				hdu_1 = openFitsFile('%s' %(beam_file))  
-				mueller_beam2 = hdu[0].data[chan_num]      
-				fv1 = figur(3, 12, 12, 80)
+				hdu2 = openFitsFile('%s' %(beam_file)) 			
+				mueller_beam2 = hdu2[0].data[chan_num] 				
+				     
+							
 			
 				if save_fits == 'yes':
 			
-					pyfits.writeto('%s_S%s_mueller_4_x_4_beam2.fits' %(beam2_start_filename, str(station_num).zfill(4)),\
-					 mueller_beam2, header = beam_header, clobber=True)
-					 
-			    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam2, '%s_S%s_4x4_Meuller_Images.png' \
-			    	%(beam_image2, str(station_num).zfill(4)))
+					pyfits.writeto('%s_S%s_mueller_4_x_4_beam2.fits' %(beam2_start_filename, str(station_num).zfill(4)),
+						       mueller_beam2, header = beam_header, clobber=True)
+				
+				#	6
+				fv1 = figur(3, 12, 12, 80)	 
+			    	Mueller_image(fv1, beam_header, 4, 4, 16 , mueller_beam2, '%s_S%s_4x4_Meuller_Images.png'
+			    		     %(beam_image2, str(station_num).zfill(4)))
 			    	
+			    	# 	1D
+			    	if config.get('plot_beam_image', 'plot_1D\mueller_image', 1) == 'yes':
+			    		image_size = int(config.get('plot_beam_image', 'beam_image\size', 1))
+				    	image_fov = int(config.get('plot_beam_image', 'beam_image_fov\deg', 1))
+				    	sx = np.linspace(-image_fov/2., image_fov/2., image_size)
+				    	#plt.figure(figsize = (4,4))
+				    	fig = figur(7, 12, 12, 80)
+				    	#import matplotlib.ticker as mtick
+				    	for i in range(16):
+	    					ax = plt.subplot(4,4,i+1)
+	    					# Set y logaritmic
+						#ax.set_yscale('log')
+						#ax.yaxis.set_major_formatter(mtick.ScalarFormatter(useMathText=True))
+						if i in [0, 5, 10, 15]:	#% 2 == 0:
+							ax.plot(sx, np.sqrt(mueller_beam2[i].diagonal()))
+						else:
+					    		ax.plot(sx, mueller_beam2[i].diagonal())
+			    		# Set common labels
+					#ax.set_xlabel('angular size / $[deg]$')
+					#ax.set_ylabel('Normalized Beam Power')
+					#
+					fig.text(0.5, 0.04, 'angular size / $[deg]$', ha='center', fontsize="20")
+					fig.text(0.04, 0.5, 'Normalized Beam Power', va='center', rotation='vertical', fontsize="20")
+			    		fig.savefig('dis_1d_S%s.png' %str(station_num).zfill(4)); fig.clear()
+			    	mueller_beam1[::5,:,:] = mueller_beam1[::5,:,:]**2
+			    	mueller_beam2[::5,:,:] = mueller_beam2[::5,:,:]**2
 			    	diff_beam = mueller_beam1 - mueller_beam2
+			    	#df = np.where((diff_beam[:] in [0, 5, 10, 15]) | (np.isnan(beam_voltage)) |(np.isinf(beam_voltage)), 0.000012, beam_voltage)
+			    	#diff_beam[::5,:,:] = diff_beam[::5,:,:]**2
 			    	
-			    	#	Plot Beam Errors
+			    	#	Plot Beam Errors 7
 			    	
 			    	if save_fits == 'yes':
 			    	
-			    		pyfits.writeto('%s_S%s_mueller_4_x_4_beam.fits' %(beam_diffname, \
-			    		str(station_num).zfill(4)), diff_beam, header = beam_header, clobber=True)
+			    		pyfits.writeto('%s_S%s_mueller_4_x_4_beam.fits' %(beam_diffname, 
+			    			      str(station_num).zfill(4)), diff_beam, header = beam_header, clobber=True)
 			    		
-			    	fv1 = figur(4, 12, 12, 80)
-			    	Mueller_image(fv1, beam_header, 4, 4, 16 , diff_beam, '%s_S%s_4x4_Meuller_Images.png' \
-			    	%(beam_image2, str(station_num).zfill(4)))
+			    	fv2 = figur(4, 12, 12, 80)
+			    	Mueller_image(fv2, beam_header, 4, 4, 16 , diff_beam, '%s_S%s_4x4_diff_Meuller_Images.png' 
+			    		      %(beam_image2, str(station_num).zfill(4)))
 			    	
 		    	
 		    	os.system('rm -f Eampl.fits Ephase.fits')
