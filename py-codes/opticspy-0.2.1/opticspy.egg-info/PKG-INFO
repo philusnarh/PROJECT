@@ -1,0 +1,11 @@
+Metadata-Version: 1.0
+Name: opticspy
+Version: 0.2.1
+Summary: Python optics module
+Home-page: http://opticspy.org
+Author: Xing Fan
+Author-email: marvin.fanxing@gmail.com
+License: MIT License
+Description: UNKNOWN
+Keywords: optic,lens,zernike,raytracing
+Platform: UNKNOWN

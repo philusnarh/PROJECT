@@ -1,0 +1,6 @@
+include LICENSE
+include MANIFEST.in
+include README.md
+include troubleshooting.md
+recursive-include opticspy/ray_tracing/glass_database *
+recursive-include opticspy/ray_tracing/CodeV_examples *
