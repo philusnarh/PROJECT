@@ -1,0 +1,10 @@
+
+ virtualenv --version
+
+ mkdir ~/tanvenvironment
+virtualenv --system-site-packages  ~/tanvenvironment/tan_new_app
+#virtualenv  ~/tanvenvironment/tan_new_app
+
+source ~/tanvenvironment/tan_new_app/bin/activate
+source project_name/bin/activate
+
