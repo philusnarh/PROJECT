@@ -1,5 +1,7 @@
 
- virtualenv --version
+pip install virtualenv
+
+virtualenv --version
 
  mkdir ~/tanvenvironment
 virtualenv --system-site-packages  ~/tanvenvironment/tan_new_app
@@ -7,4 +9,11 @@ virtualenv --system-site-packages  ~/tanvenvironment/tan_new_app
 
 source ~/tanvenvironment/tan_new_app/bin/activate
 source project_name/bin/activate
+
+alias rm='rm -i'
+alias tanv_env='source ~/tanvenvironment/tan_new_app/bin/activate'
+
+sudo pip install --upgrade setuptools pip
+sudo pip install --upgrade "ipython[all]"
+
 
