@@ -60,9 +60,9 @@ def conv_healpix_plott_all(conv_map, figname, fig_num, w_size, h_size, DPI):
 	k = ['$Measured \, Stokes \, I^{MB_{T}}$', 
 	     '$Measured \, Stokes \, Q^{MB_{T}}$', 
 	     '$Measured \, Stokes \, U^{MB_{T}}$', 
-	     '$Measured \, Stokes \, I^{MB_{GP}}$',
-	      '$Measured \, Stokes \, Q^{MB_{GP}}$', 
-	      '$Measured \, Stokes \, U^{MB_{GP}}$', 
+	     '$Measured \, Stokes \, I^{MB_{XY}}$',
+	      '$Measured \, Stokes \, Q^{MB_{XY}}$', 
+	      '$Measured \, Stokes \, U^{MB_{XY}}$', 
 	     '$ Error \, in \, Stokes \, I$', 
 	     '$ Error \, in \, Stokes \, Q$', 
 	     '$ Error \, in \, Stokes \, U$' ]
