@@ -91,12 +91,12 @@ def interBeam(xpol,freq,jd,ra,dec):
   """
 
   # Reading FEKO BEAMS ..."
-  fekoX=fmt.FEKO(xpol)    #reading the "x polarization data i.e the antenna gain" stored in tnkhe FEKO format. eg <fmt.FEKO instance at 0x7f97136b8368>
-  #fields = fekoX.fields   # there are about 11  different fields in  the FEKO format
-  feko_xpol=fekoX.fields[0]  # out of the 11 the first field  is selected because that is where our data is.
-  phi=feko_xpol.phi*np.pi/180. # the  azimuth angle in radians 
+  fekoX=fmt.FEKO(xpol)           # reading the "x polarization data i.e the antenna gain" stored in tnkhe FEKO format. eg <fmt.FEKO instance at 0x7f97136b8368>
+  #fields = fekoX.fields         # there are about 11  different fields in  the FEKO format
+  feko_xpol=fekoX.fields[0]      # out of the 11 the first field  is selected because that is where our data is.
+  phi=feko_xpol.phi*np.pi/180.   # the  azimuth angle in radians 
   theta=feko_xpol.theta*np.pi/180. #  the zenith angle in radians
-  theta = np.pi/2 - theta # pyephem wants the elevation rather than the zenith angle
+  theta = np.pi/2 - theta        # pyephem wants the elevation rather than the zenith angle
   gxx=feko_xpol.etheta*np.conj(feko_xpol.etheta)+feko_xpol.ephi*np.conj(feko_xpol.ephi) 
   #the antenna gain in complex array is multiplied by it's complex conjugate to give the amplitude of the signal  
   #print "before_gxx=",gxx
@@ -115,7 +115,7 @@ def interBeam(xpol,freq,jd,ra,dec):
 	  feko_xpol=fekoX.fields[jj]  # out of the 11 the first field  is selected because that is where our data is.
 	  phi=feko_xpol.phi*np.pi/180. # the  azimuth angle in radians 
 	  theta=feko_xpol.theta*np.pi/180. #  the zenith angle in radians
-	  theta = np.pi/2 - theta # pyephem wants the elevation rather than the zenith angle
+	  theta = np.pi/2 - theta          # pyephem wants the elevation rather than the zenith angle
 	  bm[jj,:]=feko_xpol.etheta*np.conj(feko_xpol.etheta)+feko_xpol.ephi*np.conj(feko_xpol.ephi) 
           #the antenna gain in complex array is multiplied by it's complex conjugate to give the amplitude of the signal  
 	  #print "before_gxx=",gxx
@@ -220,7 +220,7 @@ def interBeam(xpol,freq,jd,ra,dec):
   print "SPATIAL INTERPOLATION"
   c = 0
   for r in range(ra.shape[0]):
-    ra[r] = ra[r] - 2*np.pi if ra[r]>(2*np.pi) else ra[r]     # when the ra is greater than 2 pi , subtract 2 pi from that ra value else maintain it   
+    ra[r] = ra[r] - 2*np.pi if ra[r]>(2*np.pi) else ra[r]        # when the ra is greater than 2 pi , subtract 2 pi from that ra value else maintain it   
     dist = np.sqrt((ra[r] - beamRA)**2 + (dec[r] - beamDEC)**2)  # difference between the ra and the beam ra , the difference between the dec and the beamDEC find the distance between them 
     ind = np.argsort(dist)  # gives the array of indices that will do the sorting eg. [ 0,  1,  2,  3,  4,  5,  6,  7,  8,  9, 10]
     ind = ind.flatten()
