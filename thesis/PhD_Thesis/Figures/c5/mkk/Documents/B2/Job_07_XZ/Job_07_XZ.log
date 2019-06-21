@@ -1,0 +1,132 @@
+ 
+ GRASP version 10.4.0 (Windows amd64/em64t 64-bit)
+ 
+ GRASP found  40 CPU cores
+ 
+ Program started at  3:45:42 on  3 December 2017
+GRASP>COMMAND OBJECT po_single_face_scatterer_SR get_currents ( source :   sequence(ref(tabulated_swe_coefficients)), auto_convergence_of_po : on,   convergence_on_scatterer : sequence(ref(MR))) cmd_1 
+ ----- TASK No. 1 -----     Started at  3:45:42 on December  3, 2017             
+INFO: Message from object SRrimTab: 
+ 
+Duplicate points in x and y are found for 
+Index: 1 and index: 1025 
+x-value: -2.58061       -2.58061 
+y-value: -0.316033E-15   0.316033E-15 
+The last point is removed 
+ 
+INFO: Message from object SRrimTab: 
+ 
+Duplicate points in x and y are found for 
+Index: 1024 and index: 2047 
+x-value: 2.58061        2.58061 
+y-value: -0.176608E-15   0.176608E-15 
+The last point is removed 
+ 
+WARNING: Message from object SRrimTab: 
+------- 
+The order of the input data points is changed for 
+Old index: 2045 
+New index: 2 
+Point: 2.58059       0.158500E-01 
+ 
+INFO: Message from object MRrimTab: 
+ 
+Duplicate points in x and y are found for 
+Index: 1 and index: 1025 
+x-value: 7.50041        7.50041 
+y-value: -0.459268E-15   0.459268E-15 
+The last point is removed 
+ 
+WARNING: Message from object MRrimTab: 
+------- 
+The order of the input data points is changed for 
+Old index: 2047 
+New index: 1025 
+Point: -7.50041      -0.111574E-14 
+ 
+WARNING: Message from object MRrimTab: 
+------- 
+Duplicate points in phi and rho are found for 
+Index: 1024 and index: 2047 
+first point: 3.14159        7.49681 
+last point:  3.14159        7.49681 
+The last point is removed 
+ 
+INFO: 
+---- 
+Duplicate points in x and y are found for 
+Index: 1 and index: 2 
+x-value: 0.00000        0.00000 
+y-value: 0.00000        0.00000 
+z-value: -15.9826       -15.9826 
+The last point is removed 
+ 
+WARNING: Message from object MRsurf: 
+Only 15689 points are used 
+ 
+INFO: 
+---- 
+Duplicate points in x and y are found for 
+Index: 1 and index: 2 
+x-value: -0.233971      -0.233971 
+y-value: -0.192620E-15  -0.192620E-15 
+z-value: 1.83478        1.83478 
+The last point is removed 
+ 
+WARNING: Message from object SRsurf: 
+Only 11932 points are used 
+ 
+  PO1 =   47  PO2 =   98  Face =    1, Final PO-values from auto-convergence
+  PTD =   83              Edge =    1, Final PTD-value from auto-convergence.
+ Total task time:  2:04 min               
+GRASP>COMMAND OBJECT po_single_face_scatterer_MR get_currents ( source :   sequence(ref(po_single_face_scatterer_SR)), auto_convergence_of_po : on,   convergence_on_output_grid : sequence(ref(spherical_cut))) cmd_2 
+ ----- TASK No. 2 -----     Started at  3:47:47 on December  3, 2017             
+  PO1 =  180  PO2 =  530  Face =    1, Final PO-values from auto-convergence
+  PTD =  510              Edge =    1, Final PTD-value from auto-convergence.
+ Total task time:  3:39 min               
+GRASP>COMMAND OBJECT spherical_grid get_field ( source :   sequence(ref(po_single_face_scatterer_MR))) cmd_3 
+ ----- TASK No. 3 -----     Started at  3:51:27 on December  3, 2017             
+ Total task time:  1:26 min               
+GRASP>COMMAND OBJECT spherical_grid add_field ( source :   sequence(ref(po_single_face_scatterer_SR), ref(tabulated_swe_coefficients)))   cmd_4 
+ ----- TASK No. 4 -----     Started at  3:52:54 on December  3, 2017             
+ Total task time: 30.23 sec               
+GRASP>QUIT 
+ ----- END OF TASKS -----     Completed at  3:53:24 on December  3, 2017         
+INFO: 5 WARNINGS ENCOUNTERED. 
+ 
+WARNING NO. 1 
+Message from object SRrimTab: 
+------- 
+The order of the input data points is changed for 
+Old index: 2045 
+New index: 2 
+Point: 2.58059       0.158500E-01 
+ 
+WARNING NO. 2 
+Message from object MRrimTab: 
+------- 
+The order of the input data points is changed for 
+Old index: 2047 
+New index: 1025 
+Point: -7.50041      -0.111574E-14 
+ 
+WARNING NO. 3 
+Message from object MRrimTab: 
+------- 
+Duplicate points in phi and rho are found for 
+Index: 1024 and index: 2047 
+first point: 3.14159        7.49681 
+last point:  3.14159        7.49681 
+The last point is removed 
+ 
+WARNING NO. 4 
+Message from object MRsurf: 
+Only 15689 points are used 
+ 
+WARNING NO. 5 
+Message from object SRsurf: 
+Only 11932 points are used 
+ 
+ 
+ Total time was 7:41 min
+ Program stopped at  3:53:24 on  3 December 2017

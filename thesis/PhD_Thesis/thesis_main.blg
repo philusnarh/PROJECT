@@ -1,0 +1,130 @@
+This is BibTeX, Version 0.99d (TeX Live 2017/Debian)
+Capacity: max_strings=100000, hash_size=100000, hash_prime=85009
+The top-level auxiliary file: thesis_main.aux
+The style file: mnras.bst
+Database file #1: references1.bib
+You're missing a field name---line 603 of file references1.bib
+ : 
+ : %  author       = { Miller, F. D.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 636 of file references1.bib
+ :   
+ :   address   = "Berlin, Germany"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 641 of file references1.bib
+ : 
+ : %  title={Astronomy: A physical perspective},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 648 of file references1.bib
+ : 
+ : %  title={21 cm intensity mapping},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 1080 of file references1.bib
+ : 
+ : @inproceedings{6051207,
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1139 of file references1.bib
+ :     
+ :     %address   = "New York, US"
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field part---line 1148 of file references1.bib
+ : month = 
+ :         ,
+I'm skipping whatever remains of this entry
+You're missing a field part---line 1159 of file references1.bib
+ : month = 
+ :         ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1229 of file references1.bib
+ : 
+ : %      author         = "Jelic, Vibor and others",
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 1262 of file references1.bib
+ : @article{2015MNRAS.447..400A
+ :                             ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 1317 of file references1.bib
+ : @article{2014MNRAS.441.3271W
+ :                             ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1440 of file references1.bib
+ : 
+ : %   author = {{Shaw}, J.~R. and {Sigurdson}, K. and {Sitwell}, M. and {Stebbins}, A. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 1679 of file references1.bib
+ : 
+ : %   author = {{Acosta-Pulido}, J.~A. and {Agudo}, I. and {Alberdi}, A. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Repeated entry---line 2188 of file references1.bib
+ : @article{lakshminarayanan2011zernike
+ :                                     ,
+I'm skipping whatever remains of this entry
+Repeated entry---line 2213 of file references1.bib
+ : @article{2016A&A...594A..10P
+ :                             ,
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2342 of file references1.bib
+ : 
+ : %   author = {{Miville-Desch{\^e}nes}, M.-A. and {Ysard}, N. and {Lavabre}, A. and
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 2361 of file references1.bib
+ : 
+ : %author = {Haslam, C.G.T. and Salter, C.J. and Stoffel, H. and Wilson, W.E.},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Reallocated singl_function (elt_size=4) to 100 items from 50.
+Warning--empty publisher in 1980poet.book.....B
+Warning--empty institution in 2015Rick
+You've used 135 entries,
+            2881 wiz_defined-function locations,
+            1705 strings with 39934 characters,
+and the built_in function-call counts, 67704 in all, are:
+= -- 5209
+> -- 5052
+< -- 385
++ -- 2284
+- -- 757
+* -- 7762
+:= -- 10702
+add.period$ -- 0
+call.type$ -- 135
+change.case$ -- 275
+chr.to.int$ -- 133
+cite$ -- 137
+duplicate$ -- 3436
+empty$ -- 3613
+format.name$ -- 1167
+if$ -- 11965
+int.to.chr$ -- 3
+int.to.str$ -- 0
+missing$ -- 138
+newline$ -- 433
+num.names$ -- 966
+pop$ -- 943
+preamble$ -- 1
+purify$ -- 540
+quote$ -- 0
+skip$ -- 2134
+stack$ -- 0
+substring$ -- 3520
+swap$ -- 1865
+text.length$ -- 570
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 1185
+warning$ -- 2
+while$ -- 1012
+width$ -- 0
+write$ -- 1380
+(There were 17 error messages)

@@ -1,0 +1,19 @@
+<OutputFiles>
+ <File Format="Text" Path="Job_39yz.tci" Type="tci" Object="unknown" Hash="86b9d380922e1b7e4f122035ef1110ab"/>
+ <File Format="Text" Path="Job_39yz.tor" Type="tor" Object="unknown" Hash="1d6728d169e4af495b9550cfe655e3de"/>
+ <File Format="Text" Path="Job_39yz.out" Type="out" Object="unknown" Hash="f863dfa0647b8e965e86737f2a1ca9ae"/>
+ <File Format="Ticra" Path="spherical_cut.cut" Quantity="E" Type="Cut:Spherical" Object="spherical_cut" Hash="6c6dc7dc255af4aa773aa3abc60980fd">
+  <Parameter Values=" 0.450000000000000" Unit="GHz" Name="Frequency"/>
+  <Parameter Values="[0.000000000000000E+000;315.000000000000;8]" Unit="deg" Name="Phi"/>
+  <Parameter Values="[0.000000000000000E+000;180.000000000000;18000]" Unit="deg" Name="Theta"/>
+  <Scan Type="polar"/>
+ </File>
+ <File Format="Ticra" Path="spherical_grid.grd" Quantity="E" Type="Grid:Spherical" Object="spherical_grid" Hash="3e0c378e9510cf8010379f7ee7b6ba81">
+  <Parameter Values=" 0.450000000000000" Unit="GHz" Name="Frequency"/>
+  <Parameter Values="[-5.00000000000000;5.00000000000000;256]" Unit="deg" Name="El"/>
+  <Parameter Values="[-5.00000000000000;5.00000000000000;256]" Unit="deg" Name="Az"/>
+  <Scan Type="elevation_over_azimuth"/>
+ </File>
+ <File Format="Text" Path="comments.txt" Type="Comments"/>
+ <File Format="Text" Path="screenoutput.txt" Type="Screen"/>
+</OutputFiles>

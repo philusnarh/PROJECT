@@ -1,0 +1,726 @@
+\begin{thebibliography}{}
+\makeatletter
+\relax
+\def\mn@urlcharsother{\let\do\@makeother \do\$\do\&\do\#\do\^\do\_\do\%\do\~}
+\def\mn@doi{\begingroup\mn@urlcharsother \@ifnextchar [ {\mn@doi@}
+  {\mn@doi@[]}}
+\def\mn@doi@[#1]#2{\def\@tempa{#1}\ifx\@tempa\@empty \href
+  {http://dx.doi.org/#2} {doi:#2}\else \href {http://dx.doi.org/#2} {#1}\fi
+  \endgroup}
+\def\mn@eprint#1#2{\mn@eprint@#1:#2::\@nil}
+\def\mn@eprint@arXiv#1{\href {http://arxiv.org/abs/#1} {{\tt arXiv:#1}}}
+\def\mn@eprint@dblp#1{\href {http://dblp.uni-trier.de/rec/bibtex/#1.xml}
+  {dblp:#1}}
+\def\mn@eprint@#1:#2:#3:#4\@nil{\def\@tempa {#1}\def\@tempb {#2}\def\@tempc
+  {#3}\ifx \@tempc \@empty \let \@tempc \@tempb \let \@tempb \@tempa \fi \ifx
+  \@tempb \@empty \def\@tempb {arXiv}\fi \@ifundefined
+  {mn@eprint@\@tempb}{\@tempb:\@tempc}{\expandafter \expandafter \csname
+  mn@eprint@\@tempb\endcsname \expandafter{\@tempc}}}
+
+\bibitem[\protect\citeauthoryear{{Abitbol}, {Hill}  \& {Johnson}}{{Abitbol}
+  et~al.}{2016}]{2016MNRAS.457.1796A}
+{Abitbol} M.~H.,  {Hill} J.~C.,   {Johnson} B.~R.,  2016, \mn@doi [\mnras]
+  {10.1093/mnras/stw030}, \href
+  {http://adsabs.harvard.edu/abs/2016MNRAS.457.1796A} {457, 1796}
+
+\bibitem[\protect\citeauthoryear{Ade et~al.}{Ade et~al.}{2016}]{Ade:2015xua}
+Ade P. A.~R.,  et~al., 2016, \mn@doi [Astron. Astrophys.]
+  {10.1051/0004-6361/201525830}, 594, A13
+
+\bibitem[\protect\citeauthoryear{{Adriani} et~al.,}{{Adriani}
+  et~al.}{2011}]{2011PhRvL.106t1101A}
+{Adriani} O.,  et~al., 2011, \mn@doi [Physical Review Letters]
+  {10.1103/PhysRevLett.106.201101}, \href
+  {http://adsabs.harvard.edu/abs/2011PhRvL.106t1101A} {106, 201101}
+
+\bibitem[\protect\citeauthoryear{{Alonso}, {Ferreira}  \& {Santos}}{{Alonso}
+  et~al.}{2014}]{2014MNRAS.444.3183A}
+{Alonso} D.,  {Ferreira} P.~G.,   {Santos} M.~G.,  2014, \mn@doi [\mnras]
+  {10.1093/mnras/stu1666}, \href
+  {http://adsabs.harvard.edu/abs/2014MNRAS.444.3183A} {444, 3183}
+
+\bibitem[\protect\citeauthoryear{{Alonso}, {Bull}, {Ferreira}  \&
+  {Santos}}{{Alonso} et~al.}{2015}]{2015MNRAS.447..400A}
+{Alonso} D.,  {Bull} P.,  {Ferreira} P.~G.,   {Santos} M.~G.,  2015, \mn@doi
+  [\mnras] {10.1093/mnras/stu2474}, \href
+  {http://adsabs.harvard.edu/abs/2015MNRAS.447..400A} {447, 400}
+
+\bibitem[\protect\citeauthoryear{{Amin}, {Ahmed}, {Amin}, {Abbasi}, {Elahi}  \&
+  {Aftab}}{{Amin} et~al.}{2017}]{8251376}
+{Amin} S.,  {Ahmed} B.,  {Amin} M.,  {Abbasi} M.~I.,  {Elahi} A.,   {Aftab} U.,
+   2017, in 2017 IEEE Asia Pacific Microwave Conference (APMC). pp 57--60,
+  \mn@doi{10.1109/APMC.2017.8251376}
+
+\bibitem[\protect\citeauthoryear{Ansah-Narh, Abdalla, Smirnov, Asad  \&
+  Shaw}{Ansah-Narh et~al.}{2018}]{ansah2018simulations}
+Ansah-Narh T.,  Abdalla F.~B.,  Smirnov O.~M.,  Asad K.~M.~B.,   Shaw J.~R.,
+  2018, \mnras, 481, 2694
+
+\bibitem[\protect\citeauthoryear{Asad et~al.}{Asad
+  et~al.}{2015}]{doi:10.1093/mnras/stv1107}
+Asad K. M.~B.,  et~al., 2015, \mn@doi [\mnras] {10.1093/mnras/stv1107}, 451,
+  3709
+
+\bibitem[\protect\citeauthoryear{Asad et~al.,}{Asad et~al.}{2018}]{asad2018}
+Asad K. M.~B.,  et~al., 2018, \mnras, in preparation
+
+\bibitem[\protect\citeauthoryear{Balanis}{Balanis}{2005}]{Balanis2005}
+Balanis C.~A.,  2005, Antenna Theory Analysis and Design.
+John Wiley \& Sons, Inc, Hoboken, New Jersey
+
+\bibitem[\protect\citeauthoryear{Battye et~al.}{Battye
+  et~al.}{2013}]{battye2013h}
+Battye R.,  et~al., 2013, \mnras, 434, 1239
+
+\bibitem[\protect\citeauthoryear{{Bell} \& {En{\ss}lin}}{{Bell} \&
+  {En{\ss}lin}}{2012}]{2012A&A...540A..80B}
+{Bell} M.~R.,  {En{\ss}lin} T.~A.,  2012, \mn@doi [\aap]
+  {10.1051/0004-6361/201118672}, \href
+  {http://adsabs.harvard.edu/abs/2012A%26A...540A..80B} {540, A80}
+
+\bibitem[\protect\citeauthoryear{{Bennett} et~al.,}{{Bennett}
+  et~al.}{2013}]{WMAP_9yr_maps}
+{Bennett} C.~L.,  et~al., 2013, \mn@doi [\apjs] {10.1088/0067-0049/208/2/20},
+  \href {http://adsabs.harvard.edu/abs/2013ApJS..208...20B} {208, 20}
+
+\bibitem[\protect\citeauthoryear{Booth \& Jonas}{Booth \&
+  Jonas}{2012}]{booth2012overview}
+Booth R.,  Jonas J.,  2012, African Skies, 16, 101
+
+\bibitem[\protect\citeauthoryear{{Born} \& {Wolf}}{{Born} \&
+  {Wolf}}{1980}]{1980poet.book.....B}
+{Born} M.,  {Wolf} E.,  1980, {Principles of Optics Electromagnetic Theory of
+  Propagation, Interference and Diffraction of Light}
+
+\bibitem[\protect\citeauthoryear{{Brentjens} \& {de Bruyn}}{{Brentjens} \& {de
+  Bruyn}}{2005}]{Brentjens2005}
+{Brentjens} M.~A.,  {de Bruyn} A.~G.,  2005, \mn@doi [\aap]
+  {10.1051/0004-6361:20052990}, \href
+  {http://adsabs.harvard.edu/abs/2005A%26A...441.1217B} {441, 1217}
+
+\bibitem[\protect\citeauthoryear{Brisken}{Brisken}{2003}]{Brisken2003}
+Brisken W.,  2003, A cassegrain antenna simulator, A program for Cassegrain
+  antenna modelling.
+http://packages.ubuntu.com/lucid/cassbeam
+
+\bibitem[\protect\citeauthoryear{{Burn}}{{Burn}}{1966}]{1966MNRAS.133...67B}
+{Burn} B.~J.,  1966, \mn@doi [\mnras] {10.1093/mnras/133.1.67}, \href
+  {http://adsabs.harvard.edu/abs/1966MNRAS.133...67B} {133, 67}
+
+\bibitem[\protect\citeauthoryear{Calabretta \& Roukema}{Calabretta \&
+  Roukema}{2007}]{calabretta2007mapping}
+Calabretta M.~R.,  Roukema B.~F.,  2007, \mnras, 381, 865
+
+\bibitem[\protect\citeauthoryear{Camera, Santos, Ferreira  \& Maartens}{Camera
+  et~al.}{2014}]{camera2014cosmology}
+Camera S.,  Santos M.~G.,  Ferreira P.~G.,   Maartens R.,  2014, in Journal of
+  Physics: Conference Series. p. 012004
+
+\bibitem[\protect\citeauthoryear{Campbell}{Campbell}{2003}]{campbell2003new}
+Campbell C.~E.,  2003, Optometry \& Vision Science, 80, 79
+
+\bibitem[\protect\citeauthoryear{C{\'a}rcamo, Rom{\'a}n, Casassus, Moral  \&
+  Rannou}{C{\'a}rcamo et~al.}{2018}]{carcamo2018multi}
+C{\'a}rcamo M.,  Rom{\'a}n P.~E.,  Casassus S.,  Moral V.,   Rannou F.~R.,
+  2018, Astronomy and computing, 22, 16
+
+\bibitem[\protect\citeauthoryear{Carozzi}{Carozzi}{2015}]{7303206}
+Carozzi T.~D.,  2015, in 2015 1st URSI Atlantic Radio Science Conference (URSI
+  AT-RASC). pp~1--1, \mn@doi{10.1109/URSI-AT-RASC.2015.7303206}
+
+\bibitem[\protect\citeauthoryear{Carozzi \& Woan}{Carozzi \&
+  Woan}{2011}]{carozzi2011fundamental}
+Carozzi T.,  Woan G.,  2011, IEEE Transactions on Antennas and Propagation, 59,
+  2058
+
+\bibitem[\protect\citeauthoryear{Chai, Liu, Yu, Yu, Wu  \& Liu}{Chai
+  et~al.}{2016}]{chai2016experiments}
+Chai X.,  Liu B.,  Yu L.,  Yu S.,  Wu D.,   Liu L.,  2016, Experimental
+  Astronomy, 42, 301
+
+\bibitem[\protect\citeauthoryear{{Chang}, {Pen}, {Peterson}  \&
+  {McDonald}}{{Chang} et~al.}{2008}]{2008PhRvL.100i1303C}
+{Chang} T.-C.,  {Pen} U.-L.,  {Peterson} J.~B.,   {McDonald} P.,  2008, \mn@doi
+  [\prl] {10.1103/PhysRevLett.100.091303}, \href
+  {https://ui.adsabs.harvard.edu/abs/2008PhRvL.100i1303C} {100, 091303}
+
+\bibitem[\protect\citeauthoryear{Chang, Pen, Bandura  \& Peterson}{Chang
+  et~al.}{2010}]{chang2010intensity}
+Chang T.-C.,  Pen U.-L.,  Bandura K.,   Peterson J.~B.,  2010, Nature, 466, 463
+
+\bibitem[\protect\citeauthoryear{Charman}{Charman}{2005}]{charman2005wavefront}
+Charman W.,  2005, Contact Lens and Anterior Eye, 28, 75
+
+\bibitem[\protect\citeauthoryear{{Chong-Yaw Wee}, {Paramesran}  \&
+  {Takeda}}{{Chong-Yaw Wee} et~al.}{2004}]{1414392}
+{Chong-Yaw Wee} {Paramesran} R.,   {Takeda} F.,  2004, in 2004 IEEE Region 10
+  Conference TENCON 2004.. pp 203--206 Vol. 1,
+  \mn@doi{10.1109/TENCON.2004.1414392}
+
+\bibitem[\protect\citeauthoryear{Condon \& Ransom}{Condon \&
+  Ransom}{2016}]{condon2016essential}
+Condon J.~J.,  Ransom S.~M.,  2016, Essential radio astronomy.
+Princeton University Press
+
+\bibitem[\protect\citeauthoryear{Decker}{Decker}{1994}]{techreport-minimal2}
+Decker F.-J.,  1994, 6th workshop on beam instrumentation, Beam Distributions
+  Beyond RMS.
+Standford Linear Accelerator Center, University of Stanford
+
+\bibitem[\protect\citeauthoryear{Deng et~al.,}{Deng
+  et~al.}{2017}]{deng2017observing}
+Deng X.,  et~al., 2017, Publications of the Astronomical Society of Australia,
+  34
+
+\bibitem[\protect\citeauthoryear{Dewdney, Turner, Braun, Santander-Vela,
+  Waterson  \& Tan}{Dewdney et~al.}{2015}]{dewdney2015ska1}
+Dewdney P.,  Turner W.,  Braun R.,  Santander-Vela J.,  Waterson M.,   Tan G.,
+  2015, SKA document SKA-TEL-SKO-0000308
+
+\bibitem[\protect\citeauthoryear{{Dulwich}, {Mort}, {Salvini}, {Zarb Adami}  \&
+  {Jones}}{{Dulwich} et~al.}{2009}]{2009wska.confE..31D}
+{Dulwich} F.,  {Mort} B.~J.,  {Salvini} S.,  {Zarb Adami} K.,   {Jones} M.~E.,
+  2009, in Wide Field Astronomy {\&} Technology for the Square Kilometre Array.
+  p.~31
+
+\bibitem[\protect\citeauthoryear{Ellingson, Craig, Dowell, Taylor  \&
+  Helmboldt}{Ellingson et~al.}{2013}]{ellingson2013design}
+Ellingson S.,  Craig J.,  Dowell J.,  Taylor G.,   Helmboldt J.,  2013, in
+  Phased Array Systems \& Technology, 2013 IEEE International Symposium on. pp
+  776--783
+
+\bibitem[\protect\citeauthoryear{{Emerson} \& {Graeve}}{{Emerson} \&
+  {Graeve}}{1988}]{1988A&A...190..353E}
+{Emerson} D.~T.,  {Graeve} R.,  1988, \aap, \href
+  {http://adsabs.harvard.edu/abs/1988A%26A...190..353E} {190, 353}
+
+\bibitem[\protect\citeauthoryear{Faulkner}{Faulkner}{2011}]{6051208}
+Faulkner A.~J.,  2011, in 2011 XXXth URSI General Assembly and Scientific
+  Symposium. pp~1--4, \mn@doi{10.1109/URSIGASS.2011.6051208}
+
+\bibitem[\protect\citeauthoryear{Ferrara \& Ellis}{Ferrara \&
+  Ellis}{2008}]{ferrara2008first}
+Ferrara A.,  Ellis R.,  2008, First Light in the Universe. Saas-Fee Advanced
+  Course.
+Springer
+
+\bibitem[\protect\citeauthoryear{{Ferreira}, {Lopez}, {Navarro}  \& {Perez
+  Sinusia}}{{Ferreira} et~al.}{2015}]{2015arXiv150607396F}
+{Ferreira} C.,  {Lopez} J.~L.,  {Navarro} R.,   {Perez Sinusia} E.,  2015,
+  preprint, \href {http://adsabs.harvard.edu/abs/2015arXiv150607396F} {}
+  (\mn@eprint {arXiv} {1506.07396})
+
+\bibitem[\protect\citeauthoryear{Fleisch}{Fleisch}{2008}]{fleisch2008student}
+Fleisch D.,  2008, A student's guide to Maxwell's equations.
+Cambridge University Press
+
+\bibitem[\protect\citeauthoryear{Foley et~al.}{Foley
+  et~al.}{2016}]{foley2016engineering}
+Foley A.,  et~al., 2016, Monthly Notices of the Royal Astronomical Society,
+  460, 1664
+
+\bibitem[\protect\citeauthoryear{Foster}{Foster}{2015}]{techreport-minimal3}
+Foster G.,  2015, Research report, Required Instrumentation Information for
+  Interferometrists and Radio Astronomers.
+RATT, Department of Physics and Electronics, Rhodes University
+
+\bibitem[\protect\citeauthoryear{Garrett}{Garrett}{2013}]{garrett2013radio}
+Garrett M.~A.,  2013, in AFRICON, 2013. pp~1--5
+
+\bibitem[\protect\citeauthoryear{{Garrett} et~al.}{{Garrett}
+  et~al.}{2010}]{2010arXiv1008.2871G}
+{Garrett} M.~A.,  et~al., 2010, preprint, \href
+  {http://adsabs.harvard.edu/abs/2010arXiv1008.2871G} {} (\mn@eprint {arXiv}
+  {1008.2871})
+
+\bibitem[\protect\citeauthoryear{Gaylard}{Gaylard}{2012}]{Gaylard2012}
+Gaylard M.,  2012, Technical report, Radio Astronomy with a Single-Dish Radio
+  Telescope.
+Hartebeesthoek Radio Astronomy Observatory
+
+\bibitem[\protect\citeauthoryear{{Gong}, {Cooray}, {Silva}, {Santos}  \&
+  {Lubin}}{{Gong} et~al.}{2011}]{2011ApJ...728L..46G}
+{Gong} Y.,  {Cooray} A.,  {Silva} M.~B.,  {Santos} M.~G.,   {Lubin} P.,  2011,
+  \mn@doi [\apjl] {10.1088/2041-8205/728/2/L46}, \href
+  {http://adsabs.harvard.edu/abs/2011ApJ...728L..46G} {728, L46}
+
+\bibitem[\protect\citeauthoryear{{Gong}, {Cooray}, {Silva}, {Santos}, {Bock},
+  {Bradford}  \& {Zemcov}}{{Gong} et~al.}{2012}]{2012ApJ...745...49G}
+{Gong} Y.,  {Cooray} A.,  {Silva} M.,  {Santos} M.~G.,  {Bock} J.,  {Bradford}
+  C.~M.,   {Zemcov} M.,  2012, \mn@doi [\apj] {10.1088/0004-637X/745/1/49},
+  \href {http://adsabs.harvard.edu/abs/2012ApJ...745...49G} {745, 49}
+
+\bibitem[\protect\citeauthoryear{{G{\'o}rski}, {Hivon}, {Banday}, {Wandelt},
+  {Hansen}, {Reinecke}  \& {Bartelmann}}{{G{\'o}rski}
+  et~al.}{2005}]{2005ApJ...622..759G}
+{G{\'o}rski} K.~M.,  {Hivon} E.,  {Banday} A.~J.,  {Wandelt} B.~D.,  {Hansen}
+  F.~K.,  {Reinecke} M.,   {Bartelmann} M.,  2005, \mn@doi [\apj]
+  {10.1086/427976}, \href {http://adsabs.harvard.edu/abs/2005ApJ...622..759G}
+  {622, 759}
+
+\bibitem[\protect\citeauthoryear{{Gu}, {Xu}, {Wang}, {An}  \& {Chen}}{{Gu}
+  et~al.}{2013}]{2013ApJ...773...38G}
+{Gu} J.,  {Xu} H.,  {Wang} J.,  {An} T.,   {Chen} W.,  2013, \mn@doi [\apj]
+  {10.1088/0004-637X/773/1/38}, \href
+  {http://adsabs.harvard.edu/abs/2013ApJ...773...38G} {773, 38}
+
+\bibitem[\protect\citeauthoryear{{Hamaker}, {Bregman}  \& {Sault}}{{Hamaker}
+  et~al.}{1996}]{1996A&AS..117..137H}
+{Hamaker} J.~P.,  {Bregman} J.~D.,   {Sault} R.~J.,  1996, \aaps, \href
+  {http://adsabs.harvard.edu/abs/1996A%26AS..117..137H} {117, 137}
+
+\bibitem[\protect\citeauthoryear{Hampshire}{Hampshire}{2018}]{hampshire2018derivation}
+Hampshire D.~P.,  2018, Philosophical Transactions of the Royal Society A:
+  Mathematical, Physical and Engineering Sciences, 376, 20170447
+
+\bibitem[\protect\citeauthoryear{{Haslam}, {Klein}, {Salter}, {Stoffel},
+  {Wilson}, {Cleary}, {Cooke}  \& {Thomasson}}{{Haslam}
+  et~al.}{1981}]{1981A&A...100..209H}
+{Haslam} C.~G.~T.,  {Klein} U.,  {Salter} C.~J.,  {Stoffel} H.,  {Wilson}
+  W.~E.,  {Cleary} M.~N.,  {Cooke} D.~J.,   {Thomasson} P.,  1981, \aap, \href
+  {http://adsabs.harvard.edu/abs/1981A%26A...100..209H} {100, 209}
+
+\bibitem[\protect\citeauthoryear{{Haslam}, {Salter}, {Stoffel}  \&
+  {Wilson}}{{Haslam} et~al.}{1982}]{HaslamMap}
+{Haslam} C.~G.~T.,  {Salter} C.~J.,  {Stoffel} H.,   {Wilson} W.~E.,  1982,
+  \aap, \href {http://adsabs.harvard.edu/abs/1982A%26AS...47....1H} {47, 1}
+
+\bibitem[\protect\citeauthoryear{{Herron} et~al.,}{{Herron}
+  et~al.}{2018}]{2018ApJ...855...29H}
+{Herron} C.~A.,  et~al., 2018, \mn@doi [\apj] {10.3847/1538-4357/aaafd0}, \href
+  {https://ui.adsabs.harvard.edu/\#abs/2018ApJ...855...29H} {855, 29}
+
+\bibitem[\protect\citeauthoryear{H{\"o}gbom}{H{\"o}gbom}{1974}]{hogbom1974aperture}
+H{\"o}gbom J.,  1974, Astronomy and Astrophysics Supplement Series, 15, 417
+
+\bibitem[\protect\citeauthoryear{{Jeli{\'c}}, {Zaroubi}, {Labropoulos},
+  {Bernardi}, {de Bruyn}  \& {Koopmans}}{{Jeli{\'c}}
+  et~al.}{2010}]{2010MNRAS.409.1647J}
+{Jeli{\'c}} V.,  {Zaroubi} S.,  {Labropoulos} P.,  {Bernardi} G.,  {de Bruyn}
+  A.~G.,   {Koopmans} L.~V.~E.,  2010, \mn@doi [\mnras]
+  {10.1111/j.1365-2966.2010.17407.x}, \href
+  {http://adsabs.harvard.edu/abs/2010MNRAS.409.1647J} {409, 1647}
+
+\bibitem[\protect\citeauthoryear{Johnston, Feain  \& Gupta}{Johnston
+  et~al.}{2009}]{johnston2009science}
+Johnston S.,  Feain I.~J.,   Gupta N.,  2009, arXiv preprint arXiv:0903.4011
+
+\bibitem[\protect\citeauthoryear{Jonas \& Team}{Jonas \&
+  Team}{2018}]{jonas2018meerkat}
+Jonas J.,  Team M.,  2018, MeerKAT Science: On the Pathway to the SKA
+  (MeerKAT2016), eds Taylor P, Camilo F, Leeuw L, Moodley K (International
+  School for Advanced Studies, Trieste, Italy), 277
+
+\bibitem[\protect\citeauthoryear{{Jones}}{{Jones}}{1942}]{1942JOSA...32..486J}
+{Jones} R.~C.,  1942, Journal of the Optical Society of America (1917-1983),
+  \href {http://adsabs.harvard.edu/abs/1942JOSA...32..486J} {32, 486}
+
+\bibitem[\protect\citeauthoryear{{Jones}}{{Jones}}{1948}]{1948JOSA...38..671J}
+{Jones} R.~C.,  1948, Journal of the Optical Society of America (1917-1983),
+  \href {http://adsabs.harvard.edu/abs/1948JOSA...38..671J} {38, 671}
+
+\bibitem[\protect\citeauthoryear{Khotanzad \& Lu}{Khotanzad \&
+  Lu}{1990}]{khotanzad1990classification}
+Khotanzad A.,  Lu J.-H.,  1990, IEEE Transactions on Acoustics, Speech, and
+  Signal Processing, 38, 1028
+
+\bibitem[\protect\citeauthoryear{Klessen \& Glover}{Klessen \&
+  Glover}{2016}]{klessen2016physical}
+Klessen R.~S.,  Glover S.~C.,  2016, in , Star Formation in Galaxy Evolution:
+  Connecting Numerical Models to Reality.
+Springer, pp 85--249
+
+\bibitem[\protect\citeauthoryear{Knee \& Brunt}{Knee \&
+  Brunt}{2001}]{knee2001massive}
+Knee L.~B.,  Brunt C.~M.,  2001, Nature, 412, 308
+
+\bibitem[\protect\citeauthoryear{{Kogut} et~al.}{{Kogut}
+  et~al.}{2007}]{Kogut2007}
+{Kogut} A.,  et~al., 2007, \mn@doi [\apj] {10.1086/519754}, \href
+  {http://adsabs.harvard.edu/abs/2007ApJ...665..355K} {665, 355}
+
+\bibitem[\protect\citeauthoryear{{Krachmalnicoff}, {Baccigalupi}, {Aumont},
+  {Bersanelli}  \& {Mennella}}{{Krachmalnicoff}
+  et~al.}{2016}]{2016A&A...588A..65K}
+{Krachmalnicoff} N.,  {Baccigalupi} C.,  {Aumont} J.,  {Bersanelli} M.,
+  {Mennella} A.,  2016, \mn@doi [\aap] {10.1051/0004-6361/201527678}, \href
+  {http://adsabs.harvard.edu/abs/2016A%26A...588A..65K} {588, A65}
+
+\bibitem[\protect\citeauthoryear{Kraus}{Kraus}{1966}]{Kraus1966}
+Kraus J.~D.,  1966, Radio Astronomy.
+McGraw-Hill, Inc, New York
+
+\bibitem[\protect\citeauthoryear{{La Porta}, {Burigana}, {Reich}  \&
+  {Reich}}{{La Porta} et~al.}{2008}]{LaPorta2008}
+{La Porta} L.,  {Burigana} C.,  {Reich} W.,   {Reich} P.,  2008, \mn@doi [\aap]
+  {10.1051/0004-6361:20078435}, \href
+  {http://adsabs.harvard.edu/abs/2008A%26A...479..641L} {479, 641}
+
+\bibitem[\protect\citeauthoryear{Labate, Braun, Dewdney, Waterson  \&
+  Wagg}{Labate et~al.}{2017}]{8105424}
+Labate M.~G.,  Braun R.,  Dewdney P.,  Waterson M.,   Wagg J.,  2017, in 2017
+  XXXIInd General Assembly and Scientific Symposium of the International Union
+  of Radio Science (URSI GASS). pp~1--4,
+  \mn@doi{10.23919/URSIGASS.2017.8105424}
+
+\bibitem[\protect\citeauthoryear{Lakshminarayanan \& Fleck}{Lakshminarayanan \&
+  Fleck}{2011}]{lakshminarayanan2011zernike}
+Lakshminarayanan V.,  Fleck A.,  2011, Journal of Modern Optics, 58, 545
+
+\bibitem[\protect\citeauthoryear{Lidz, Furlanetto, Oh, Aguirre, Chang, Dore  \&
+  Pritchard}{Lidz et~al.}{2011}]{Lidz:2011dx}
+Lidz A.,  Furlanetto S.~R.,  Oh S.~P.,  Aguirre J.,  Chang T.-C.,  Dore O.,
+  Pritchard J.~R.,  2011, \mn@doi [Astrophys. J.] {10.1088/0004-637X/741/2/70},
+  741, 70
+
+\bibitem[\protect\citeauthoryear{Lightman}{Lightman}{1979}]{lightman1979radiative}
+Lightman A.,  1979, Radiative Processes in Astrophysics Wiley Interscience
+
+\bibitem[\protect\citeauthoryear{{Loeb} \& {Wyithe}}{{Loeb} \&
+  {Wyithe}}{2008}]{2008PhRvL.100p1301L}
+{Loeb} A.,  {Wyithe} J.~S.~B.,  2008, \mn@doi [Physical Review Letters]
+  {10.1103/PhysRevLett.100.161301}, \href
+  {http://adsabs.harvard.edu/abs/2008PhRvL.100p1301L} {100, 161301}
+
+\bibitem[\protect\citeauthoryear{{Lonsdale} et~al.}{{Lonsdale}
+  et~al.}{2009}]{2009IEEEP..97.1497L}
+{Lonsdale} C.~J.,  et~al., 2009, \mn@doi [IEEE Proceedings]
+  {10.1109/JPROC.2009.2017564}, \href
+  {https://ui.adsabs.harvard.edu/#abs/2009IEEEP..97.1497L} {97, 1497}
+
+\bibitem[\protect\citeauthoryear{{Makoni}}{{Makoni}}{2018}]{2018PhyW...31h...8M}
+{Makoni} M.,  2018, \mn@doi [Physics World] {10.1088/2058-7058/31/8/12}, \href
+  {https://ui.adsabs.harvard.edu/\#abs/2018PhyW...31h...8M} {31, 8}
+
+\bibitem[\protect\citeauthoryear{{Miville-Desch{\^e}nes}, {Ysard}, {Lavabre},
+  {Ponthieu}, {Mac{\'{\i}}as-P{\'e}rez}, {Aumont}  \&
+  {Bernard}}{{Miville-Desch{\^e}nes} et~al.}{2008}]{MD2008}
+{Miville-Desch{\^e}nes} M.-A.,  {Ysard} N.,  {Lavabre} A.,  {Ponthieu} N.,
+  {Mac{\'{\i}}as-P{\'e}rez} J.~F.,  {Aumont} J.,   {Bernard} J.~P.,  2008,
+  \mn@doi [\aap] {10.1051/0004-6361:200809484}, \href
+  {http://adsabs.harvard.edu/abs/2008A%26A...490.1093M} {490, 1093}
+
+\bibitem[\protect\citeauthoryear{Mort, Dulwich, Salvini, Adami  \& Jones}{Mort
+  et~al.}{2010}]{mort2010oskar}
+Mort B.~J.,  Dulwich F.,  Salvini S.,  Adami K.~Z.,   Jones M.~E.,  2010, in
+  Phased Array Systems and Technology (ARRAY), 2010 IEEE International
+  Symposium on. pp 690--694
+
+\bibitem[\protect\citeauthoryear{Newburgh et~al.,}{Newburgh
+  et~al.}{2014}]{newburgh2014calibrating}
+Newburgh L.~B.,  et~al., 2014, in Ground-based and Airborne Telescopes V. p.
+  91454V
+
+\bibitem[\protect\citeauthoryear{{Noll}}{{Noll}}{1976}]{1976JOSA...66..207N}
+{Noll} R.~J.,  1976, Journal of the Optical Society of America (1917-1983),
+  \href {http://adsabs.harvard.edu/abs/1976JOSA...66..207N} {66, 207}
+
+\bibitem[\protect\citeauthoryear{{Norhazman} \& {Jalil}}{{Norhazman} \&
+  {Jalil}}{2012}]{6243926}
+{Norhazman} H.,  {Jalil} N.~A.,  2012, in 2012 Sixth Asia Modelling Symposium.
+  pp 81--86, \mn@doi{10.1109/AMS.2012.45}
+
+\bibitem[\protect\citeauthoryear{Oosterloo, Verheijen, van Cappellen, Bakker,
+  Heald  \& Ivashina}{Oosterloo et~al.}{2009}]{oosterloo2009apertif}
+Oosterloo T.,  Verheijen M.,  van Cappellen W.,  Bakker L.,  Heald G.,
+  Ivashina M.,  2009, arXiv preprint arXiv:0912.0093
+
+\bibitem[\protect\citeauthoryear{{Oppermann} et~al.,}{{Oppermann}
+  et~al.}{2012}]{Oppermann2012}
+{Oppermann} N.,  et~al., 2012, \mn@doi [\aap] {10.1051/0004-6361/201118526},
+  \href {http://adsabs.harvard.edu/abs/2012A%26A...542A..93O} {542, A93}
+
+\bibitem[\protect\citeauthoryear{Padmanabhan}{Padmanabhan}{2017}]{padmanabhan2017constraining}
+Padmanabhan H.,  2017, arXiv preprint arXiv:1706.01471
+
+\bibitem[\protect\citeauthoryear{{Padmanabhan}}{{Padmanabhan}}{2018}]{2018MNRAS.475.1477P}
+{Padmanabhan} H.,  2018, \mn@doi [\mnras] {10.1093/mnras/stx3250}, \href
+  {https://ui.adsabs.harvard.edu/\#abs/2018MNRAS.475.1477P} {475, 1477}
+
+\bibitem[\protect\citeauthoryear{Parsons et~al.,}{Parsons
+  et~al.}{2010}]{parsons2010precision}
+Parsons A.~R.,  et~al., 2010, The Astronomical Journal, 139, 1468
+
+\bibitem[\protect\citeauthoryear{{Perley}, {Sowinski}  \& et al.}{{Perley}
+  et~al.}{2015}]{2015Rick}
+{Perley} R.,  {Sowinski} K.,   et al. 2015, Evla memo xxx, Optimizing VLA
+  Antenna Performance
+
+\bibitem[\protect\citeauthoryear{{Peterson} et~al.,}{{Peterson}
+  et~al.}{2009}]{2009astro2010S.234P}
+{Peterson} J.~B.,  et~al., 2009, in astro2010: The Astronomy and Astrophysics
+  Decadal Survey. p.~234 (\mn@eprint {arXiv} {0902.3091})
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration} et~al.,}{{Planck
+  Collaboration} et~al.}{2016a}]{Planck_2015_maps}
+{Planck Collaboration} et~al., 2016a, \mn@doi [\aap]
+  {10.1051/0004-6361/201525820}, \href
+  {http://adsabs.harvard.edu/abs/2016A%26A...594A...8P} {594, A8}
+
+\bibitem[\protect\citeauthoryear{{Planck Collaboration} et~al.,}{{Planck
+  Collaboration} et~al.}{2016b}]{2016A&A...594A..10P}
+{Planck Collaboration} et~al., 2016b, \mn@doi [\aap]
+  {10.1051/0004-6361/201525967}, \href
+  {http://adsabs.harvard.edu/abs/2016A%26A...594A..10P} {594, A10}
+
+\bibitem[\protect\citeauthoryear{Pogany \& Nadarajah}{Pogany \&
+  Nadarajah}{2009}]{techreport-minimal}
+Pogany T.~K.,  Nadarajah S.,  2009, Research Report~18, On the characteristic
+  function of the generalized normal distribution.
+Probability and Statistics Group School of Mathematics, The University of
+  Manchester
+
+\bibitem[\protect\citeauthoryear{{Rahmat-Samii}, {Williams}  \&
+  {Yaccarino}}{{Rahmat-Samii} et~al.}{1995}]{482029}
+{Rahmat-Samii} Y.,  {Williams} L.~I.,   {Yaccarino} R.~G.,  1995, \mn@doi [IEEE
+  Antennas and Propagation Magazine] {10.1109/74.482029}, 37, 16
+
+\bibitem[\protect\citeauthoryear{Rau, Bhatnagar, Voronkov  \& Cornwell}{Rau
+  et~al.}{2009}]{2009Rau}
+Rau U.,  Bhatnagar S.,  Voronkov M.~A.,   Cornwell T.~J.,  2009, Proc. IEEE, 97
+
+\bibitem[\protect\citeauthoryear{{Remazeilles}, {Dickinson}, {Banday},
+  {Bigot-Sazy}  \& {Ghosh}}{{Remazeilles} et~al.}{2015}]{2015MNRAS.451.4311R}
+{Remazeilles} M.,  {Dickinson} C.,  {Banday} A.~J.,  {Bigot-Sazy} M.~A.,
+  {Ghosh} T.,  2015, \mn@doi [\mnras] {10.1093/mnras/stv1274}, \href
+  {https://ui.adsabs.harvard.edu/\#abs/2015MNRAS.451.4311R} {451, 4311}
+
+\bibitem[\protect\citeauthoryear{{Renil} \& {van Rooyen}}{{Renil} \& {van
+  Rooyen}}{2018}]{2018SPIE10704E..1UR}
+{Renil} R.,  {van Rooyen} R.,  2018, in Society of Photo-Optical
+  Instrumentation Engineers (SPIE) Conference Series. p. 107041U,
+  \mn@doi{10.1117/12.2312482}
+
+\bibitem[\protect\citeauthoryear{{Robishaw}, {Quataert}  \&
+  {Heiles}}{{Robishaw} et~al.}{2008}]{2008ApJ...680..981R}
+{Robishaw} T.,  {Quataert} E.,   {Heiles} C.,  2008, \mn@doi [\apj]
+  {10.1086/588031}, \href
+  {https://ui.adsabs.harvard.edu/\#abs/2008ApJ...680..981R} {680, 981}
+
+\bibitem[\protect\citeauthoryear{{Roy}, {Bhattacharyya}  \& {Gupta}}{{Roy}
+  et~al.}{2012}]{2012MNRAS.427L..90R}
+{Roy} J.,  {Bhattacharyya} B.,   {Gupta} Y.,  2012, \mn@doi [\mnras]
+  {10.1111/j.1745-3933.2012.01351.x}, \href
+  {http://adsabs.harvard.edu/abs/2012MNRAS.427L..90R} {427, L90}
+
+\bibitem[\protect\citeauthoryear{{Saha}, {Jain}  \& {Souradeep}}{{Saha}
+  et~al.}{2006}]{2006ApJ...645L..89S}
+{Saha} R.,  {Jain} P.,   {Souradeep} T.,  2006, \mn@doi [\apjl]
+  {10.1086/506321}, \href {http://adsabs.harvard.edu/abs/2006ApJ...645L..89S}
+  {645, L89}
+
+\bibitem[\protect\citeauthoryear{{Santiago}, {Strauss}, {Lahav}, {Davis},
+  {Dressler}  \& {Huchra}}{{Santiago} et~al.}{1995}]{1995ApJ...446..457S}
+{Santiago} B.~X.,  {Strauss} M.~A.,  {Lahav} O.,  {Davis} M.,  {Dressler} A.,
+  {Huchra} J.~P.,  1995, \mn@doi [\apj] {10.1086/175805}, \href
+  {http://adsabs.harvard.edu/abs/1995ApJ...446..457S} {446, 457}
+
+\bibitem[\protect\citeauthoryear{{Santiago}, {Strauss}, {Lahav}, {Davis},
+  {Dressler}  \& {Huchra}}{{Santiago} et~al.}{1996}]{1996ApJ...461...38S}
+{Santiago} B.~X.,  {Strauss} M.~A.,  {Lahav} O.,  {Davis} M.,  {Dressler} A.,
+  {Huchra} J.~P.,  1996, \mn@doi [\apj] {10.1086/177036}, \href
+  {http://adsabs.harvard.edu/abs/1996ApJ...461...38S} {461, 38}
+
+\bibitem[\protect\citeauthoryear{{Santos}, {Cooray}  \& {Knox}}{{Santos}
+  et~al.}{2005}]{SantosCoorayKnox}
+{Santos} M.~G.,  {Cooray} A.,   {Knox} L.,  2005, \mn@doi [\apj]
+  {10.1086/429857}, \href {http://adsabs.harvard.edu/abs/2005ApJ...625..575S}
+  {625, 575}
+
+\bibitem[\protect\citeauthoryear{{Santos},   et~al.}{{Santos}
+  et~al.}{2015}]{2015aska.confE..19S}
+{Santos} M.,    et~al., 2015, in Advancing Astrophysics with the Square
+  Kilometre Array (AASKA14). p.~19 (\mn@eprint {arXiv} {1501.03989})
+
+\bibitem[\protect\citeauthoryear{Santos et~al.}{Santos
+  et~al.}{2017}]{Santos:2017qgq}
+Santos M.~G.,  et~al., 2017, in {Proceedings, MeerKAT Science: On the Pathway
+  to the SKA (MeerKAT2016): Stellenbosch, South Africa, May 25-27, 2016}.
+  (\mn@eprint {arXiv} {1709.06099})
+
+\bibitem[\protect\citeauthoryear{{Schediwy}, {Gozzard}, {Gravestock}, {Stobie},
+  {Whitaker}, {Malan}, {Boven}  \& {Grainge}}{{Schediwy}
+  et~al.}{2018a}]{2018arXiv180511455S}
+{Schediwy} S.,  {Gozzard} D.,  {Gravestock} C.,  {Stobie} S.,  {Whitaker} R.,
+  {Malan} J.,  {Boven} P.,   {Grainge} K.,  2018a, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/\#abs/2018arXiv180511455S} {p.
+  arXiv:1805.11455}
+
+\bibitem[\protect\citeauthoryear{{Schediwy} et~al.,}{{Schediwy}
+  et~al.}{2018b}]{2018AAS...23121503S}
+{Schediwy} S.,  et~al., 2018b, in American Astronomical Society Meeting
+  Abstracts \#231. p. 215.03
+
+\bibitem[\protect\citeauthoryear{Schramm \& Galeotti}{Schramm \&
+  Galeotti}{1997}]{1997Schramm}
+Schramm D.~N.,  Galeotti P.,  1997, Generation of Cosmological Large-Scale
+  Structure.
+Kluwer Academic, Netherlands
+
+\bibitem[\protect\citeauthoryear{{Shaw}, {Sigurdson}, {Pen}, {Stebbins}  \&
+  {Sitwell}}{{Shaw} et~al.}{2014}]{Shaw:2013}
+{Shaw} J.~R.,  {Sigurdson} K.,  {Pen} U.-L.,  {Stebbins} A.,   {Sitwell} M.,
+  2014, \mn@doi [\apj] {10.1088/0004-637X/781/2/57}, \href
+  {http://adsabs.harvard.edu/abs/2014ApJ...781...57S} {781, 57}
+
+\bibitem[\protect\citeauthoryear{Shaw, Sigurdson, Sitwell, Stebbins  \&
+  Pen}{Shaw et~al.}{2015}]{shaw2015coaxing}
+Shaw J.~R.,  Sigurdson K.,  Sitwell M.,  Stebbins A.,   Pen U.-L.,  2015,
+  Physical Review D, 91, 083514
+
+\bibitem[\protect\citeauthoryear{{Silva}, {Santos}, {Cooray}  \&
+  {Gong}}{{Silva} et~al.}{2015}]{2015ApJ...806..209S}
+{Silva} M.,  {Santos} M.~G.,  {Cooray} A.,   {Gong} Y.,  2015, \mn@doi [\apj]
+  {10.1088/0004-637X/806/2/209}, \href
+  {http://adsabs.harvard.edu/abs/2015ApJ...806..209S} {806, 209}
+
+\bibitem[\protect\citeauthoryear{{Smirnov}}{{Smirnov}}{2011}]{2011A&A...527A.106S}
+{Smirnov} O.~M.,  2011, \mn@doi [\aap] {10.1051/0004-6361/201016082}, \href
+  {http://adsabs.harvard.edu/abs/2011A%26A...527A.106S} {527, A106}
+
+\bibitem[\protect\citeauthoryear{{Smoot}}{{Smoot}}{1999}]{1999astro.ph..2201S}
+{Smoot} G.~F.,  1999, arXiv e-prints, \href
+  {https://ui.adsabs.harvard.edu/\#abs/1999astro.ph..2201S} {pp
+  astro--ph/9902201}
+
+\bibitem[\protect\citeauthoryear{{Souradeep}, {Saha}  \& {Jain}}{{Souradeep}
+  et~al.}{2006}]{2006NewAR..50..854S}
+{Souradeep} T.,  {Saha} R.,   {Jain} P.,  2006, \mn@doi [\nar]
+  {10.1016/j.newar.2006.09.009}, \href
+  {http://adsabs.harvard.edu/abs/2006NewAR..50..854S} {50, 854}
+
+\bibitem[\protect\citeauthoryear{{Stark} et~al.,}{{Stark}
+  et~al.}{2017}]{2017MNRAS.464..469S}
+{Stark} D.~P.,  et~al., 2017, \mn@doi [\mnras] {10.1093/mnras/stw2233}, \href
+  {http://adsabs.harvard.edu/abs/2017MNRAS.464..469S} {464, 469}
+
+\bibitem[\protect\citeauthoryear{{Sudarvizhi}}{{Sudarvizhi}}{2016}]{7569541}
+{Sudarvizhi} D.,  2016, in 2016 International Conference on Recent Trends in
+  Information Technology (ICRTIT). pp~1--6,
+  \mn@doi{10.1109/ICRTIT.2016.7569541}
+
+\bibitem[\protect\citeauthoryear{Tapken, Appenzeller, Noll, Richling, Heidt,
+  Meinkoehn  \& Mehlert}{Tapken et~al.}{2007}]{Tapken:2007ja}
+Tapken C.,  Appenzeller I.,  Noll S.,  Richling S.,  Heidt J.,  Meinkoehn E.,
+  Mehlert D.,  2007, \mn@doi [Astron. Astrophys.] {10.1051/0004-6361:20065825}
+
+\bibitem[\protect\citeauthoryear{Taylor \& Jarvis}{Taylor \&
+  Jarvis}{2017}]{taylor2017mightee}
+Taylor A.~R.,  Jarvis M.,  2017, in IOP Conference Series: Materials Science
+  and Engineering. p. 012014
+
+\bibitem[\protect\citeauthoryear{Teh \& Chin}{Teh \& Chin}{1988}]{teh1988image}
+Teh C.-H.,  Chin R.~T.,  1988, in Proceedings CVPR'88: The Computer Society
+  Conference on Computer Vision and Pattern Recognition. pp 556--561
+
+\bibitem[\protect\citeauthoryear{{Testori}, {Reich}  \& {Reich}}{{Testori}
+  et~al.}{2008}]{Testori2008}
+{Testori} J.~C.,  {Reich} P.,   {Reich} W.,  2008, \mn@doi [\aap]
+  {10.1051/0004-6361:20078842}, \href
+  {http://adsabs.harvard.edu/abs/2008A%26A...484..733T} {484, 733}
+
+\bibitem[\protect\citeauthoryear{Thompson \& Bracewell}{Thompson \&
+  Bracewell}{1974}]{1974Thompson}
+Thompson A.~R.,  Bracewell R.~N.,  1974, Astro. J., 79
+
+\bibitem[\protect\citeauthoryear{Thompson, Moran  \& Swenson}{Thompson
+  et~al.}{2001}]{Thompson2001}
+Thompson A.~R.,  Moran J.,   Swenson G.,  2001, Interferometry and Synthesis in
+  Radio Astronomy, 2nd edition.
+John Wiley \& Sons Inc.
+
+\bibitem[\protect\citeauthoryear{Vallini, Pallottini, Ferrara, Gallerani,
+  Sobacchi  \& Behrens}{Vallini et~al.}{2017}]{vallini2017co}
+Vallini L.,  Pallottini A.,  Ferrara A.,  Gallerani S.,  Sobacchi E.,   Behrens
+  C.,  2017, Monthly Notices of the Royal Astronomical Society, 473, 271
+
+\bibitem[\protect\citeauthoryear{Vermij, Fiorin, Hagleitner  \& Bertels}{Vermij
+  et~al.}{2014}]{vermij2014exascale}
+Vermij E.,  Fiorin L.,  Hagleitner C.,   Bertels K.,  2014, in International
+  Supercomputing Conference. pp 35--52
+
+\bibitem[\protect\citeauthoryear{{White}}{{White}}{1998}]{1998PhRvD..57.5273W}
+{White} M.,  1998, \mn@doi [\prd] {10.1103/PhysRevD.57.5273}, \href
+  {http://adsabs.harvard.edu/abs/1998PhRvD..57.5273W} {57, 5273}
+
+\bibitem[\protect\citeauthoryear{{Wijnholds}, {van der Tol}, {Nijboer}  \& {van
+  der Veen}}{{Wijnholds} et~al.}{2010}]{2010ISPM...27...30W}
+{Wijnholds} S.,  {van der Tol} S.,  {Nijboer} R.,   {van der Veen} A.-J.,
+  2010, \mn@doi [IEEE Signal Processing Magazine] {10.1109/MSP.2009.934853},
+  \href {http://adsabs.harvard.edu/abs/2010ISPM...27...30W} {27, 30}
+
+\bibitem[\protect\citeauthoryear{{Wilson}, {Rohlfs}  \&
+  {H{\"u}ttemeister}}{{Wilson} et~al.}{2009}]{wilson2009tools}
+{Wilson} T.~L.,  {Rohlfs} K.,   {H{\"u}ttemeister} S.,  2009, Tools of Radio
+  Astronomy.
+Springer-Verlag, Berlin, Germany
+
+\bibitem[\protect\citeauthoryear{{Wilson}, {Rohlfs}  \&
+  {H{\"u}ttemeister}}{{Wilson} et~al.}{2013}]{wilson2013tools}
+{Wilson} T.~L.,  {Rohlfs} K.,   {H{\"u}ttemeister} S.,  2013, Tools of radio
+  astronomy.
+Springer Science \& Business Media
+
+\bibitem[\protect\citeauthoryear{{Wolleben}, {Landecker}, {Reich}  \&
+  {Wielebinski}}{{Wolleben} et~al.}{2006}]{Wolleben2006}
+{Wolleben} M.,  {Landecker} T.~L.,  {Reich} W.,   {Wielebinski} R.,  2006,
+  \mn@doi [\aap] {10.1051/0004-6361:20053851}, \href
+  {http://adsabs.harvard.edu/abs/2006A%26A...448..411W} {448, 411}
+
+\bibitem[\protect\citeauthoryear{{Wolleben} et~al.,}{{Wolleben}
+  et~al.}{2009}]{GMIMS}
+{Wolleben} M.,  et~al., 2009, in {Strassmeier} K.~G.,  {Kosovichev} A.~G.,
+  {Beckman} J.~E.,  eds,  IAU Symposium Vol. 259, Cosmic Magnetic Fields: From
+  Planets, to Stars and Galaxies. pp 89--90 (\mn@eprint {arXiv} {0812.2450}),
+  \mn@doi{10.1017/S1743921309030117}
+
+\bibitem[\protect\citeauthoryear{Wolleben, Landecker, Hovey, Messing, Davison,
+  House, Somaratne  \& Tashev}{Wolleben et~al.}{2010}]{wolleben2010rotation}
+Wolleben M.,  Landecker T.,  Hovey G.,  Messing R.,  Davison O.,  House N.,
+  Somaratne K.,   Tashev I.,  2010, The Astronomical Journal, 139, 1681
+
+\bibitem[\protect\citeauthoryear{{Wolz}, {Abdalla}, {Blake}, {Shaw}, {Chapman}
+  \& {Rawlings}}{{Wolz} et~al.}{2014}]{2014MNRAS.441.3271W}
+{Wolz} L.,  {Abdalla} F.~B.,  {Blake} C.,  {Shaw} J.~R.,  {Chapman} E.,
+  {Rawlings} S.,  2014, \mn@doi [\mnras] {10.1093/mnras/stu792}, \href
+  {http://adsabs.harvard.edu/abs/2014MNRAS.441.3271W} {441, 3271}
+
+\bibitem[\protect\citeauthoryear{{Wolz} et~al.,}{{Wolz}
+  et~al.}{2015}]{2015aska.confE..35W}
+{Wolz} L.,  et~al., 2015, Advancing Astrophysics with the Square Kilometre
+  Array (AASKA14), \href {http://adsabs.harvard.edu/abs/2015aska.confE..35W}
+  {p.~35}
+
+\bibitem[\protect\citeauthoryear{Woudt, Fender, Armstrong  \& Carignan}{Woudt
+  et~al.}{2013}]{woudt2013early}
+Woudt P.~A.,  Fender R.~P.,  Armstrong R.~P.,   Carignan C.,  2013, South
+  African Journal of Science, 109, 01
+
+\bibitem[\protect\citeauthoryear{Wyant \& Creath}{Wyant \&
+  Creath}{1992}]{wyant1992basic}
+Wyant J.~C.,  Creath K.,  1992, Applied optics and optical engineering, 11, 28
+
+\bibitem[\protect\citeauthoryear{{Yue}, {Ferrara}, {Pallottini}, {Gallerani}
+  \& {Vallini}}{{Yue} et~al.}{2015}]{2015MNRAS.450.3829Y}
+{Yue} B.,  {Ferrara} A.,  {Pallottini} A.,  {Gallerani} S.,   {Vallini} L.,
+  2015, \mn@doi [\mnras] {10.1093/mnras/stv933}, \href
+  {http://adsabs.harvard.edu/abs/2015MNRAS.450.3829Y} {450, 3829}
+
+\bibitem[\protect\citeauthoryear{{Zitrin} et~al.,}{{Zitrin}
+  et~al.}{2015}]{2015ApJ...810L..12Z}
+{Zitrin} A.,  et~al., 2015, \mn@doi [\apjl] {10.1088/2041-8205/810/1/L12},
+  \href {http://adsabs.harvard.edu/abs/2015ApJ...810L..12Z} {810, L12}
+
+\bibitem[\protect\citeauthoryear{de Villiers}{de~Villiers}{2015}]{7305152}
+de Villiers M.,  2015, in 2015 IEEE International Symposium on Antennas and
+  Propagation USNC/URSI National Radio Science Meeting. pp 1526--1527,
+  \mn@doi{10.1109/APS.2015.7305152}
+
+\bibitem[\protect\citeauthoryear{van Cappellen, de Vaate, Warnick, Veidt,
+  Gough, Jackson  \& Roddis}{van Cappellen et~al.}{2011}]{6051207}
+van Cappellen W.,  de Vaate J. G.~B.,  Warnick K.,  Veidt B.,  Gough R.,
+  Jackson C.,   Roddis N.,  2011, in 2011 XXXth URSI General Assembly and
+  Scientific Symposium. pp~1--4, \mn@doi{10.1109/URSIGASS.2011.6051207}
+
+\makeatother
+\end{thebibliography}

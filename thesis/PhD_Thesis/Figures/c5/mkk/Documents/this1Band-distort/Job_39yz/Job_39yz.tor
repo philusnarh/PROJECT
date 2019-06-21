@@ -1,0 +1,211 @@
+Globalcoor  coor_sys  
+(
+)
+ 
+APcoor  coor_sys  
+(
+  origin           : struct(x: 8.040468561 m, y: 0.0 m, z: 13.088511819 m),
+  base             : ref(Globalcoor)
+)
+ 
+Feedcoor  coor_sys  
+(
+  origin           : struct(x: -1.474395974 m, y: -0.2E-01 m, z: -0.937799046 m),
+  x_axis           : struct(x: 0.8483745742, y: 0.0, z: 0.52939643165),
+  base             : ref(Globalcoor)
+)
+ 
+SRcoor  coor_sys  
+(
+  origin           : struct(x: -1.4448539849 m, y: -0.17660830361E-15 m, z: -0.6932983818E-02 m),
+  x_axis           : struct(x: -0.56624365625, y: 0.68436698459E-16, z: -0.82423790362),
+  y_axis           : struct(x: 0.0, y: -1.0, z: 0.0),
+  base             : ref(Globalcoor)
+)
+ 
+MRcoor  coor_sys  
+(
+  origin           : struct(x: 8.040468561 m, y: 0.0 m, z: 13.088511819 m),
+  base             : ref(Globalcoor)
+)
+ 
+SRrimTab  tabulated_rim_xy  
+(
+  file_name        : SRrim.rim
+)
+ 
+SRrim  elliptical_rim  
+(
+  half_axis        : struct(x: 2.5806081764 m, y: 2.4412215566 m)
+)
+ 
+MRrimTab  tabulated_rim_xy  
+(
+  file_name        : MRrim.rim
+)
+ 
+MRrim  elliptical_rim  
+(
+  half_axis        : struct(x: 7.5 m, y: 7.5 m)
+)
+ 
+SRsurf  irregular_xy_grid_pseudo_splines  
+(
+  file_name        : SRsurf.sfc,
+  change_reference : struct(status: on, definition_coor_sys: ref(Globalcoor), new_reference_coor_sys: 
+ref(SRcoor))
+)
+ 
+MRsurf  irregular_xy_grid_pseudo_splines  
+(
+  file_name        : MRsurf.sfc,
+  change_reference : struct(status: on, definition_coor_sys: ref(Globalcoor), new_reference_coor_sys: 
+ref(MRcoor))
+)
+ 
+SR  reflector  
+(
+  coor_sys         : ref(SRcoor),
+  surface          : ref(SRsurf),
+  rim              : ref(SRrimTab)
+)
+ 
+MR  reflector  
+(
+  coor_sys         : ref(MRcoor),
+  surface          : ref(MRsurf),
+  rim              : ref(MRrimTab)
+)
+ 
+gaussian_beam_pattern  gaussian_beam_pattern  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  taper_angle      : 53.0,
+  taper            : -10.0,
+  factor           : struct(db: 0.0, deg: -30.0),
+  frequency_index_for_plot : 10
+)
+ 
+band1_horn_freq_list  frequency  
+(
+  frequency_list   : sequence(450.0 MHz)
+)
+ 
+po_single_face_scatterer_SR  po_single_face_scatterer  
+(
+  frequency        : ref(band1_horn_freq_list),
+  scatterer        : ref(SR)
+)
+ 
+po_single_face_scatterer_MR  po_single_face_scatterer  
+(
+  frequency        : ref(band1_horn_freq_list),
+  scatterer        : ref(MR)
+)
+ 
+spherical_cut  spherical_cut  
+(
+  coor_sys         : ref(APcoor),
+  theta_range      : struct(start: 0.0, end: 180.0, np: 18000),
+  phi_range        : struct(start: 0.0, end: 315.0, np: 8),
+  comment          : "Field data in cuts",
+  frequency        : ref(band1_horn_freq_list)
+)
+ 
+tabulated_swe_coefficients  tabulated_swe_coefficients  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  file_name        : B3_Horn.sph,
+  power_norm       : on
+)
+ 
+spherical_grid  spherical_grid  
+(
+  coor_sys         : ref(APcoor),
+  grid_type        : elevation_over_azimuth,
+  x_range          : struct(start: -5.0, end: 5.0, np: 256),
+  y_range          : struct(start: -5.0, end: 5.0, np: 256),
+  polarisation_modification : struct(status: on, coor_sys: ref(APcoor)),
+  frequency        : ref(band1_horn_freq_list)
+)
+ 
+band1_pattern_650MHz  tabulated_pattern  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  file_name        : OSO-SKA-BAND1_freq650MHz.cut,
+  power_norm       : on,
+  phase_reference  : struct(x: 10.0 cm, y: 10.0 cm, z: 0.0 cm)
+)
+ 
+band1_pattern_350MHz  tabulated_pattern  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  file_name        : OSO-SKA-BAND1_freq350MHz.cut,
+  power_norm       : on,
+  phase_reference  : struct(x: 20.0 mm, y: 0.0 m, z: 20.0 mm)
+)
+ 
+band1_pattern_450MHz  tabulated_pattern  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  file_name        : OSO-SKA-BAND1_freq450MHz.cut,
+  power_norm       : on
+)
+ 
+band1_pattern_550MHz  tabulated_pattern  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  file_name        : OSO-SKA-BAND1_freq550MHz.cut,
+  power_norm       : on
+)
+ 
+band1_pattern_750MHz  tabulated_pattern  
+(
+  frequency        : ref(band1_horn_freq_list),
+  coor_sys         : ref(Feedcoor),
+  file_name        : OSO-SKA-BAND1_freq750MHz_1.cut,
+  power_norm       : on
+)
+ 
+//DO NOT MODIFY OBJECTS BELOW THIS LINE.
+//THESE OBJECTS ARE CREATED AND MANAGED BY THE
+//GRAPHICAL USER INTERFACE AND SHOULD NOT BE
+//MODIFIED MANUALLY!
+view_1  view  
+(
+  objects          : sequence(ref(view_1_coor_sys_plot),ref(view_1_reflector_plot),ref(view_1_feed_plot),
+ref(rays_from_point_sources),ref(view_1_output_points_plot))
+)
+ 
+view_1_coor_sys_plot  coor_sys_plot  
+(
+)
+ 
+view_1_reflector_plot  reflector_plot  
+(
+)
+ 
+view_1_feed_plot  feed_plot  
+(
+)
+ 
+rays_from_point_sources  rays_from_point_sources  
+(
+  objects          : sequence(ref(gaussian_beam_pattern)),
+  theta_range      : struct(start: 0.0, end: 30.0, np: 4),
+  phi_range        : struct(start: 0.0, end: 270.0, np: 4),
+  ray_path_range   : struct(start: 0.0 m, end: 30.0 m)
+)
+ 
+view_1_output_points_plot  output_points_plot  
+(
+)
+ 
+ //$$ Saved at 23:46:32 on 04.12.2017 by GRASP ver. 10.4.0 SN=005970
+  

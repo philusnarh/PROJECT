@@ -1,0 +1,139 @@
+ Tci file: Job_39xz.tci
+ Out file: Job_39xz.out
+ Log file: Job_39xz.log
+ 
+ 
+ GRASP version 10.4.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ GRASP found  40 CPU cores
+ 
+ ----- TASK No. 1 -----     Started at 23:38:07 on December  4, 2017
+ 
+ po_single_face_scatterer_SR get_currents ( source :
+ sequence(ref(band1_pattern_450MHz)), auto_convergence_of_po : on,
+ convergence_on_scatterer : sequence(ref(MR)))
+ 
+ WARNING: Message from object SRrimTab:
+ -------
+ The order of the input data points is changed for
+ Old index: 2045
+ New index: 2
+ Point: 2.58059       0.158500E-01
+ 
+ WARNING: Message from object MRrimTab:
+ -------
+ The order of the input data points is changed for
+ Old index: 2047
+ New index: 1025
+ Point: -7.50041      -0.111574E-14
+ 
+ WARNING: Message from object MRrimTab:
+ -------
+ Duplicate points in phi and rho are found for
+ Index: 1024 and index: 2047
+ first point: 3.14159        7.49681
+ last point:  3.14159        7.49681
+ The last point is removed
+ 
+ WARNING: Message from object MRsurf:
+ Only 15689 points are used
+ 
+  PO1 =   10  PO2 =   10  Face =    1, Performing PO convergence test  
+ WARNING: Message from object SRsurf:
+ Only 11932 points are used
+ 
+   expansion in spherical modes:       completed  
+ 
+ WARNING: Message from object band1_pattern_450MHz:
+ -------
+ The field is expanded in spherical modes with maximum mode index N
+ A near-field distance, r, smaller than N/k has been requested
+ r*k =   23.2312     < NMAX = 180
+ Modes larger than r*k will not be used
+ and the near-field may be wrong
+ The warning will only be typed once
+ 
+  PO1 =   26  PO2 =   44  Face =    1, Final PO-values from auto-convergence 
+  PTD =   30              Edge =    1, Final PTD-value from auto-convergence. 
+ 
+  Calculating currents.
+  No. of PO-points (target):                826                               
+  No. of PTD points (target):                30                      
+                                                                      
+ Total task time:  1:48 min
+ 
+ ----- TASK No. 2 -----     Started at 23:39:56 on December  4, 2017
+ 
+ po_single_face_scatterer_MR get_currents ( source :
+ sequence(ref(po_single_face_scatterer_SR)), auto_convergence_of_po : on,
+ convergence_on_output_grid : sequence(ref(spherical_cut)))
+ 
+  PO1 =   48  PO2 =  145  Face =    1, Final PO-values from auto-convergence 
+  PTD =  143              Edge =    1, Final PTD-value from auto-convergence. 
+ 
+  Calculating currents.
+ Total task time:  3.02 sec
+ 
+ ----- TASK No. 3 -----     Started at 23:39:59 on December  4, 2017
+ 
+ spherical_cut get_field ( source : sequence(ref(po_single_face_scatterer_MR)))
+ 
+  No. of field points:                   144000                               
+  No. of PO points (source):               4616 
+  No. of PTD points (source):               143 
+ Total task time:  1.65 sec
+ 
+ ----- TASK No. 4 -----     Started at 23:40:00 on December  4, 2017
+ 
+ spherical_grid add_field ( source : sequence(ref(po_single_face_scatterer_SR),
+ ref(band1_pattern_450MHz)))
+ 
+  No. of field points:                    65536 
+  No. of PO points (source):                826 
+  No. of PTD points (source):                30 
+                                                                      
+ Total task time:  5.75 sec
+ 
+ ----- END OF TASKS -----     Completed at 23:40:06 on December  4, 2017
+ 
+ INFO: 6 WARNINGS ENCOUNTERED.
+ THE FIRST 5 WARNINGS WERE:
+ 
+ WARNING NO. 1
+ Message from object SRrimTab:
+ -------
+ The order of the input data points is changed for
+ Old index: 2045
+ New index: 2
+ Point: 2.58059       0.158500E-01
+ 
+ WARNING NO. 2
+ Message from object MRrimTab:
+ -------
+ The order of the input data points is changed for
+ Old index: 2047
+ New index: 1025
+ Point: -7.50041      -0.111574E-14
+ 
+ WARNING NO. 3
+ Message from object MRrimTab:
+ -------
+ Duplicate points in phi and rho are found for
+ Index: 1024 and index: 2047
+ first point: 3.14159        7.49681
+ last point:  3.14159        7.49681
+ The last point is removed
+ 
+ WARNING NO. 4
+ Message from object MRsurf:
+ Only 15689 points are used
+ 
+ WARNING NO. 5
+ Message from object SRsurf:
+ Only 11932 points are used
+ 
+ THERE WAS AN ADDITIONAL WARNING.
+ 
+ 
+ Total time was 1:59 min

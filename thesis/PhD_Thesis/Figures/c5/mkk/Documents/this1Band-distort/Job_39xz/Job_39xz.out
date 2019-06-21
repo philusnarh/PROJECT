@@ -1,0 +1,1722 @@
+ 
+ 
+                                       G R A S P
+                                       ==========
+ 
+  General multi-reflector analysis program
+ 
+ GRASP version 10.4.0 (Windows amd64/em64t 64-bit)
+ 
+ 
+ GRASP found  40 CPU cores
+ 
+  Reading tor-file: Job_39xz.tor
+ 
+ 
+  *** Object name:  Globalcoor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Globalcoor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  APcoor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  APcoor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.804047E+01 m     0.000000E+00 m     0.130885E+02 m
+  Base name : Globalcoor
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  Feedcoor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  Feedcoor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :  -0.147440E+01 m    -0.200000E-01 m    -0.937799E+00 m
+  Base name : Globalcoor
+  X_axis :     0.848375    0.000000    0.529396
+  Z_axis :    -0.529396    0.000000    0.848375
+ 
+ 
+  *** Object name:  SRcoor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  SRcoor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :  -0.144485E+01 m    -0.176608E-15 m    -0.693298E-02 m
+  Base name : Globalcoor
+  X_axis :    -0.566244    0.000000   -0.824238
+  Y_axis :     0.000000   -1.000000    0.000000
+  Z_axis :    -0.824238    0.000000    0.566244
+  New Z_axis :    -0.824238    0.000000    0.566244
+  New Y_axis :    -0.000000   -1.000000   -0.000000
+ 
+ 
+  *** Object name:  MRcoor
+  *** Class name :  coor_sys
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  MRcoor
+  *** Class name :  coor_sys
+  *** Message    :  New values in object
+ 
+  Origin :   0.804047E+01 m     0.000000E+00 m     0.130885E+02 m
+  Base name : Globalcoor
+  Z_axis :     0.000000    0.000000    1.000000
+ 
+ 
+  *** Object name:  SRrimTab
+  *** Class name :  tabulated_rim_xy
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  SRrimTab
+  *** Class name :  tabulated_rim_xy
+  *** Message    :  Definition
+ 
+ 
+  File name : SRrim.rim
+ 
+ 
+  *** Object name:  SRrim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  SRrim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    2.58061 m
+    in y-direction :    2.44122 m
+  and in SI units
+    in x-direction :    2.58061     meter
+    in y-direction :    2.44122     meter
+ 
+  The rim limits in radii are
+    minimum :    2.44122     meter
+    maximum :    2.58061     meter
+ 
+  The rim limits in x direction are
+    minimum :   -2.58061     meter
+    maximum :    2.58061     meter
+ 
+  The rim limits in y direction are
+    minimum :   -2.44122     meter
+    maximum :    2.44122     meter
+ 
+ 
+  *** Object name:  MRrimTab
+  *** Class name :  tabulated_rim_xy
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  MRrimTab
+  *** Class name :  tabulated_rim_xy
+  *** Message    :  Definition
+ 
+ 
+  File name : MRrim.rim
+ 
+ 
+  *** Object name:  MRrim
+  *** Class name :  elliptical_rim
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  MRrim
+  *** Class name :  elliptical_rim
+  *** Message    :  Definition of elliptical_rim
+ 
+ 
+  The half axes of the ellipse are defined by
+    in x-direction :    7.50000 m
+    in y-direction :    7.50000 m
+  and in SI units
+    in x-direction :    7.50000     meter
+    in y-direction :    7.50000     meter
+ 
+  The rim limits in radii are
+    minimum :    7.50000     meter
+    maximum :    7.50000     meter
+ 
+  The rim limits in x direction are
+    minimum :   -7.50000     meter
+    maximum :    7.50000     meter
+ 
+  The rim limits in y direction are
+    minimum :   -7.50000     meter
+    maximum :    7.50000     meter
+ 
+ 
+  *** Object name:  SRsurf
+  *** Class name :  irregular_xy_grid_pseudo_splines
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  SRsurf
+  *** Class name :  irregular_xy_grid_pseudo_splines
+  *** Message    :  New values in object
+ 
+ 
+  File name : SRsurf.sfc
+ 
+  Change of reference coordinate system
+    specified by:
+    The definition coordinate system: Globalcoor
+    The new reference coordinate system: SRcoor
+ 
+ 
+  *** Object name:  MRsurf
+  *** Class name :  irregular_xy_grid_pseudo_splines
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  MRsurf
+  *** Class name :  irregular_xy_grid_pseudo_splines
+  *** Message    :  New values in object
+ 
+ 
+  File name : MRsurf.sfc
+ 
+  Change of reference coordinate system
+    specified by:
+    The definition coordinate system: Globalcoor
+    The new reference coordinate system: MRcoor
+ 
+ 
+  *** Object name:  SR
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  SR
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: SRcoor
+  Surface: SRsurf
+  Rim: SRrimTab
+ 
+ 
+  *** Object name:  MR
+  *** Class name :  reflector
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  MR
+  *** Class name :  reflector
+  *** Message    :  New values in object
+ 
+  Coordinate system: MRcoor
+  Surface: MRsurf
+  Rim: MRrimTab
+ 
+ 
+  *** Object name:  gaussian_beam_pattern
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  gaussian_beam_pattern
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  gaussian_beam_pattern
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+  Factor amplitude :     0.0000 dB
+  Factor phase :   -30.0000 deg
+ 
+  Frequency index :10
+ 
+ 
+  *** Object name:  gaussian_beam_pattern
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  gaussian_beam_pattern
+  *** Class name :  gaussian_beam_pattern
+  *** Message    :  Definition of gaussian feed
+ 
+ 
+  Taper angle :   53.0000 degrees
+ 
+  Taper compared to on-axis level :  -10.0000 dB
+ 
+  The imaginary displacement along the negative z-axis
+    is  0.371435 wavelengths
+ 
+ 
+  *** Object name:  band1_horn_freq_list
+  *** Class name :  frequency
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_horn_freq_list
+  *** Class name :  frequency
+  *** Message    :  New values in object
+ 
+  Frequency No.    1  :   0.450000E+03 MHz
+ 
+ 
+  *** Object name:  po_single_face_scatterer_SR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  po_single_face_scatterer_SR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Scatterer : SR
+ 
+ 
+  *** Object name:  po_single_face_scatterer_MR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  po_single_face_scatterer_MR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Scatterer : MR
+ 
+ 
+  *** Object name:  spherical_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  spherical_cut
+  *** Class name :  spherical_cut
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : APcoor
+  Theta range : start   0.00000    end 180.00000    points 18000
+  Phi range : start   0.00000    end 315.00000    points     8
+ 
+ 
+  *** Object name:  tabulated_swe_coefficients
+  *** Class name :  tabulated_swe_coefficients
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  tabulated_swe_coefficients
+  *** Class name :  tabulated_swe_coefficients
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  tabulated_swe_coefficients
+  *** Class name :  tabulated_swe_coefficients
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+ 
+ 
+  *** Object name:  tabulated_swe_coefficients
+  *** Class name :  tabulated_swe_coefficients
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  tabulated_swe_coefficients
+  *** Class name :  tabulated_swe_coefficients
+  *** Message    :  Definition of spherical feed
+ 
+  The feed is defined by a series of spherical wave coefficients
+ 
+  File name : B3_Horn.sph
+ 
+  Power normalisation is : on
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : APcoor
+  Polarisation modification : on
+  Polarisation_mod_Coor : APcoor
+  X range : start  -5.00000    end   5.00000    points   256
+  Y range : start  -5.00000    end   5.00000    points   256
+  Grid type : elevation_over_azimuth
+ 
+ 
+  *** Object name:  band1_pattern_650MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_650MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_650MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+ 
+ 
+  *** Object name:  band1_pattern_650MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  band1_pattern_650MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of feed
+ 
+ 
+  File name : OSO-SKA-BAND1_freq650MHz.cut
+ 
+  The phase reference displacement
+    x :    10.0000 cm
+    y :    10.0000 cm
+    z :    0.00000 cm
+ 
+  and in SI units
+    x :   0.100000 meter
+    y :   0.100000 meter
+    z :    0.00000 meter
+ 
+  Power normalisation is : on
+ 
+ 
+  *** Object name:  band1_pattern_350MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_350MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_350MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+ 
+ 
+  *** Object name:  band1_pattern_350MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  band1_pattern_350MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of feed
+ 
+ 
+  File name : OSO-SKA-BAND1_freq350MHz.cut
+ 
+  The phase reference displacement
+    x :    20.0000 mm
+    y :    0.00000 m
+    z :    20.0000 mm
+ 
+  and in SI units
+    x :   0.200000E-01 meter
+    y :    0.00000 meter
+    z :   0.200000E-01 meter
+ 
+  Power normalisation is : on
+ 
+ 
+  *** Object name:  band1_pattern_450MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_450MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_450MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+ 
+ 
+  *** Object name:  band1_pattern_450MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  band1_pattern_450MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of feed
+ 
+ 
+  File name : OSO-SKA-BAND1_freq450MHz.cut
+ 
+  Power normalisation is : on
+ 
+ 
+  *** Object name:  band1_pattern_550MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_550MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_550MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+ 
+ 
+  *** Object name:  band1_pattern_550MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  band1_pattern_550MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of feed
+ 
+ 
+  File name : OSO-SKA-BAND1_freq550MHz.cut
+ 
+  Power normalisation is : on
+ 
+ 
+  *** Object name:  band1_pattern_750MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_750MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  band1_pattern_750MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  New values in object
+ 
+  Frequency : band1_horn_freq_list
+  Coor_sys : Feedcoor
+ 
+ 
+  *** Object name:  band1_pattern_750MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of common feed attributes
+ 
+ 
+ 
+  *** Object name:  band1_pattern_750MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Definition of feed
+ 
+ 
+  File name : OSO-SKA-BAND1_freq750MHz_1.cut
+ 
+  Power normalisation is : on
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1
+  *** Class name :  view
+  *** Message    :  New values in object
+ 
+ 
+  Number of objects :      5
+ 
+  Definition of objects   :
+   No.  Name
+     1  view_1_coor_sys_plot
+     2  view_1_reflector_plot
+     3  view_1_feed_plot
+     4  rays_from_point_sources
+     5  view_1_output_points_plot
+ 
+ 
+ 
+  *** Object name:  view_1_coor_sys_plot
+  *** Class name :  coor_sys_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_coor_sys_plot
+  *** Class name :  coor_sys_plot
+  *** Message    :  Definition of coor_sys_plot
+ 
+ 
+ 
+  *** Object name:  view_1_reflector_plot
+  *** Class name :  reflector_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_reflector_plot
+  *** Class name :  reflector_plot
+  *** Message    :  Definition of reflector_plot
+ 
+ 
+ 
+  *** Object name:  view_1_feed_plot
+  *** Class name :  feed_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_feed_plot
+  *** Class name :  feed_plot
+  *** Message    :  Definition of feed_plot
+ 
+ 
+ 
+  *** Object name:  rays_from_point_sources
+  *** Class name :  rays_from_point_sources
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  rays_from_point_sources
+  *** Class name :  rays_from_point_sources
+  *** Message    :  Definition of ray_plot
+ 
+ 
+  Theta range : start   0.00000    end  30.00000    points     4
+ 
+  Phi range : start   0.00000    end 270.00000    points     4
+ 
+  Ray path range :
+  Start:    0.00000 m
+  End  :    30.0000 m
+   and in SI units
+  Start:    0.00000     meter
+  End  :    30.0000     meter
+ 
+  number of objects: 1
+ 
+    No.  Plot objects
+     1   gaussian_beam_pattern
+ 
+ 
+  *** Object name:  view_1_output_points_plot
+  *** Class name :  output_points_plot
+  *** Message    :  Object created
+ 
+ 
+ 
+  *** Object name:  view_1_output_points_plot
+  *** Class name :  output_points_plot
+  *** Message    :  Definition of output_points_plot
+ 
+ Program started at 23:38:07 on  4 December 2017
+ 
+ 
+ ----- TASK No. 1 -----     Started at 23:38:07 on December  4, 2017
+ po_single_face_scatterer_SR get_currents ( source :
+ sequence(ref(band1_pattern_450MHz)), auto_convergence_of_po : on,
+ convergence_on_scatterer : sequence(ref(MR)))
+ 
+ 
+  *** Object name:  po_single_face_scatterer_SR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : band1_pattern_450MHz
+  PO-auto-convergence selection : on
+  Convergence test on scatterer object : MR
+ 
+ 
+  *** Object name:  po_single_face_scatterer_SR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+ 
+  *** Object name:  SRrimTab
+  *** Class name :  tabulated_rim_xy
+  *** Message    :  Initialisation
+ 
+ 
+  Read tabulated data from data file named : SRrim.rim
+    Line 1: MATLAB Generated Shaped Sub Reflector Rim
+ 
+    The file specified number of points are 2048
+ 
+    The tabulated rim is defined in 2048 points
+ 
+    The limit distances between the points in x and y are:
+      Minimum: 0.757E-02
+      at point index: 511 and 512
+      Maximum: 0.516E+01
+      at point index: 4 and 2045
+ 
+  The polar origin is calculated to
+    x :  -0.126058E-03 meter
+    y :   0.214481E-15 meter
+ 
+    The limit angular distances between the points are:
+      Minimum: 0.176E+00 degrees at point index: 1
+      Maximum: 0.176E+00 degrees at point index: 1022
+ 
+    2 points are removed from input data
+    The tabulated rim is now defined in 2046 points
+ 
+  The rim limits in radius are
+    minimum   :    2.46534     meter
+    maximum   :    2.58077     meter
+ 
+  The rim limits in x direction are
+    minimum   :   -2.58065     meter
+    maximum   :    2.58063     meter
+ 
+  The rim limits in y direction are
+    minimum   :   -2.46534     meter
+    maximum   :    2.46534     meter
+ 
+  Total rim length is   15.8545 meter
+ 
+ 
+  *** Object name:  MRrimTab
+  *** Class name :  tabulated_rim_xy
+  *** Message    :  Initialisation
+ 
+ 
+  Read tabulated data from data file named : MRrim.rim
+    Line 1: MATLAB Generated Shaped Main Reflector Rim
+ 
+    The file specified number of points are 2048
+ 
+    The tabulated rim is defined in 2048 points
+ 
+    The limit distances between the points in x and y are:
+      Minimum: 0.223E-14
+      at point index: 1024 and 2047
+      Maximum: 0.150E+02
+      at point index: 512 and 1536
+ 
+  The polar origin is calculated to
+    x :  -0.359613E-02 meter
+    y :  -0.515194E-15 meter
+ 
+    The limit angular distances between the points are:
+      Minimum: 0.145E+00 degrees at point index: 512
+      Maximum: 0.214E+00 degrees at point index: 1023
+ 
+    2 points are removed from input data
+    The tabulated rim is now defined in 2046 points
+ 
+  The rim limits in radius are
+    minimum   :    7.49659     meter
+    maximum   :    7.50600     meter
+ 
+  The rim limits in x direction are
+    minimum   :   -7.50041     meter
+    maximum   :    7.50041     meter
+ 
+  The rim limits in y direction are
+    minimum   :   -7.50430     meter
+    maximum   :    7.50430     meter
+ 
+  Total rim length is   47.1388 meter
+ 
+ 
+  *** Object name:  MRsurf
+  *** Class name :  irregular_xy_grid_pseudo_splines
+  *** Message    :  Initialisation
+ 
+ 
+  Read tabulated data from data file named : MRsurf.sfc
+ 
+    The title of the tabulated surface is:
+    MATLAB Generated Shaped Main Reflector Surface
+ 
+    The file specified number of points are 15690
+ 
+    The tabulated surface is defined in 15690 points
+ 
+  The data is translated from reference coordinate system
+ 
+    Only 15689 points are used
+ 
+    The limit distances between the points in x and y are:
+      Minimum: 0.000000000 m
+      at point index: 1 and 2
+      Maximum: 25.70382650 m
+      at point index: 15434 and 15562
+ 
+    Characteristics of surface
+      minimum x value: -12.85191325 m
+      maximum x value: 12.85191325 m
+      minimum y value: -12.85170076 m
+      maximum y value: 12.85170076 m
+      minimum z value: -18.85541365 m
+      maximum z value: -0.7144506700E-01 m
+      peak to peak   : 18.78396858 m
+      average z value: -12.92393951 m
+      rms of  z value: 4.603846968 m
+ 
+  The irregular data are read
+ 
+  Start generating interpolation parameters
+ 
+  The interpolation parameters data are generated
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 190/4700
+ 
+ 
+  *** Object name:  SRsurf
+  *** Class name :  irregular_xy_grid_pseudo_splines
+  *** Message    :  Initialisation
+ 
+ 
+  Read tabulated data from data file named : SRsurf.sfc
+ 
+    The title of the tabulated surface is:
+    MATLAB Generated Shaped Sub Reflector Surface
+ 
+    The file specified number of points are 11933
+ 
+    The tabulated surface is defined in 11933 points
+ 
+  The data is translated from reference coordinate system
+ 
+    Only 11932 points are used
+ 
+    The limit distances between the points in x and y are:
+      Minimum: 0.000000000 m
+      at point index: 1 and 2
+      Maximum: 5.281693139 m
+      at point index: 7877 and 11895
+ 
+    Characteristics of surface
+      minimum x value: -2.667915548 m
+      maximum x value: 2.595366822 m
+      minimum y value: -2.533669055 m
+      maximum y value: 2.533669055 m
+      minimum z value: -0.2860786460 m
+      maximum z value: 1.843823439 m
+      peak to peak   : 2.129902085 m
+      average z value: 0.8166807150 m
+      rms of  z value: 0.5627669961 m
+ 
+  The irregular data are read
+ 
+  Start generating interpolation parameters
+ 
+  The interpolation parameters data are generated
+ 
+ Definition of tabulated feed
+ 
+ 
+  *** Object name:  band1_pattern_450MHz
+  *** Class name :  tabulated_pattern
+  *** Message    :  Initialisation of feed
+ 
+ 
+  File name : OSO-SKA-BAND1_freq450MHz.cut
+ 
+  The title of the input pattern is:
+  Field data. Phi=0 deg
+ 
+  Angular data in file
+    start value : 0.0000
+    increment   : 1.0000
+    number of values: 181
+    index of polarisation: 1
+    input cuts are asymmetrical
+    end value   : 180.00
+ 
+  Found Total number of theta cuts in file : 360
+ 
+  Found number of theta cuts in one set of the file : 360
+ 
+  File name : OSO-SKA-BAND1_freq450MHz.cut
+ 
+  The title of the input pattern is:
+  Field data. Phi=0 deg
+ 
+  Angular data in file
+    start value : 0.0000
+    increment   : 1.0000
+    number of values: 181
+    index of polarisation: 1
+    input cuts are asymmetrical
+    end value   : 180.00
+    Number of asymmetrical cuts: 360
+ 
+  Maximum level for 1st component of field
+  amplitude =   25.94 dB and phase =  -48.31 degrees
+  at theta =    0.00 degrees and phi =    0.00 degrees
+  in theta cut no.     1
+ 
+  Maximum level for 2nd component of field
+  amplitude =   25.94 dB and phase =  131.69 degrees
+  at theta =    0.00 degrees and phi =   90.00 degrees
+  in theta cut no.    91
+ 
+    Unnormalized Power/(4*pi watt) in each Azimuthal mode
+        M       Power        Accumulated
+        0   3.5838398E-03   3.5838398E-03
+        1   2.8616626E+01   2.8620210E+01
+        2   9.1678694E-03   2.8629378E+01
+        3   1.5106043E-01   2.8780439E+01
+        4   5.0945714E-05   2.8780489E+01
+        5   2.4121224E-03   2.8782902E+01
+        6   2.0131515E-06   2.8782904E+01
+        7   9.1500424E-05   2.8782995E+01
+        8   2.1179937E-08   2.8782995E+01
+        9   1.2450286E-05   2.8783008E+01
+       10   1.4907188E-08   2.8783008E+01
+       11   3.8209184E-06   2.8783011E+01
+       12   7.1021465E-10   2.8783011E+01
+       13   2.3894220E-07   2.8783012E+01
+       14   3.7688307E-11   2.8783012E+01
+       15   1.1685548E-08   2.8783012E+01
+       16   1.4012329E-12   2.8783012E+01
+       17   3.3241754E-10   2.8783012E+01
+       18   1.6264422E-13   2.8783012E+01
+       19   6.9582343E-11   2.8783012E+01
+       20   1.2456279E-13   2.8783012E+01
+       21   4.3090213E-11   2.8783012E+01
+       22   1.5125968E-13   2.8783012E+01
+       23   5.6252825E-11   2.8783012E+01
+       24   1.2377666E-13   2.8783012E+01
+       25   3.0685277E-11   2.8783012E+01
+       26   1.3263107E-13   2.8783012E+01
+       27   4.2484458E-11   2.8783012E+01
+       28   1.2041168E-13   2.8783012E+01
+       29   2.5766331E-11   2.8783012E+01
+       30   1.4299443E-13   2.8783012E+01
+       31   3.0917491E-11   2.8783012E+01
+       32   1.1487817E-13   2.8783012E+01
+       33   1.6891774E-11   2.8783012E+01
+       34   1.1701186E-13   2.8783012E+01
+       35   2.3063046E-11   2.8783012E+01
+       36   1.0627611E-13   2.8783012E+01
+       37   1.2624174E-11   2.8783012E+01
+       38   1.1266082E-13   2.8783012E+01
+       39   2.1035825E-11   2.8783012E+01
+       40   1.0287674E-13   2.8783012E+01
+       41   1.2880584E-11   2.8783012E+01
+       42   1.1323539E-13   2.8783012E+01
+       43   1.7191881E-11   2.8783012E+01
+       44   1.0464063E-13   2.8783012E+01
+       45   9.1930005E-12   2.8783012E+01
+       46   1.0551707E-13   2.8783012E+01
+       47   1.3576065E-11   2.8783012E+01
+       48   1.0126689E-13   2.8783012E+01
+       49   9.1867701E-12   2.8783012E+01
+       50   1.0986353E-13   2.8783012E+01
+       51   1.2815103E-11   2.8783012E+01
+       52   1.0114516E-13   2.8783012E+01
+       53   8.0279257E-12   2.8783012E+01
+       54   9.9764885E-14   2.8783012E+01
+       55   1.1384836E-11   2.8783012E+01
+       56   9.7868137E-14   2.8783012E+01
+       57   5.3524776E-12   2.8783012E+01
+       58   1.0081043E-13   2.8783012E+01
+       59   9.8733186E-12   2.8783012E+01
+       60   9.6555339E-14   2.8783012E+01
+       61   5.1978337E-12   2.8783012E+01
+       62   9.4106374E-14   2.8783012E+01
+       63   8.4901971E-12   2.8783012E+01
+       64   9.5040331E-14   2.8783012E+01
+       65   4.5056693E-12   2.8783012E+01
+       66   9.7587732E-14   2.8783012E+01
+       67   6.2475644E-12   2.8783012E+01
+       68   9.4135825E-14   2.8783012E+01
+       69   4.2899181E-12   2.8783012E+01
+       70   9.4008313E-14   2.8783012E+01
+       71   5.1718459E-12   2.8783012E+01
+       72   8.8812896E-14   2.8783012E+01
+       73   3.9220372E-12   2.8783012E+01
+       74   8.8560106E-14   2.8783012E+01
+       75   5.4731101E-12   2.8783012E+01
+       76   8.8833603E-14   2.8783012E+01
+       77   2.7639162E-12   2.8783012E+01
+       78   8.9923938E-14   2.8783012E+01
+       79   5.1975338E-12   2.8783012E+01
+       80   8.8448630E-14   2.8783012E+01
+       81   2.7348230E-12   2.8783012E+01
+       82   8.2424606E-14   2.8783012E+01
+       83   4.3309288E-12   2.8783012E+01
+       84   8.5362526E-14   2.8783012E+01
+       85   2.6624507E-12   2.8783012E+01
+       86   8.3456481E-14   2.8783012E+01
+       87   4.0437489E-12   2.8783012E+01
+       88   8.2981432E-14   2.8783012E+01
+       89   2.6318908E-12   2.8783012E+01
+       90   7.9261135E-14   2.8783012E+01
+       91   3.3036840E-12   2.8783012E+01
+       92   7.6768873E-14   2.8783012E+01
+       93   2.4469670E-12   2.8783012E+01
+       94   7.9038865E-14   2.8783012E+01
+       95   3.0245495E-12   2.8783012E+01
+       96   7.2542598E-14   2.8783012E+01
+       97   1.8252965E-12   2.8783012E+01
+       98   7.4140338E-14   2.8783012E+01
+       99   3.0806320E-12   2.8783012E+01
+      100   7.2846224E-14   2.8783012E+01
+      101   1.6543161E-12   2.8783012E+01
+      102   7.2708228E-14   2.8783012E+01
+      103   2.5625135E-12   2.8783012E+01
+      104   7.5110977E-14   2.8783012E+01
+      105   1.4364611E-12   2.8783012E+01
+      106   7.0119178E-14   2.8783012E+01
+      107   1.8981339E-12   2.8783012E+01
+      108   7.0490087E-14   2.8783012E+01
+      109   1.5630517E-12   2.8783012E+01
+      110   6.8281300E-14   2.8783012E+01
+      111   1.7023236E-12   2.8783012E+01
+      112   6.8104934E-14   2.8783012E+01
+      113   1.4522912E-12   2.8783012E+01
+      114   6.7491481E-14   2.8783012E+01
+      115   1.6303499E-12   2.8783012E+01
+      116   6.2553754E-14   2.8783012E+01
+      117   1.1110210E-12   2.8783012E+01
+      118   6.1934448E-14   2.8783012E+01
+      119   1.8097321E-12   2.8783012E+01
+      120   6.0103608E-14   2.8783012E+01
+      121   1.1551340E-12   2.8783012E+01
+      122   6.1725451E-14   2.8783012E+01
+      123   1.6279957E-12   2.8783012E+01
+      124   5.9901708E-14   2.8783012E+01
+      125   1.2416724E-12   2.8783012E+01
+      126   5.7138275E-14   2.8783012E+01
+      127   1.3923864E-12   2.8783012E+01
+      128   5.8914316E-14   2.8783012E+01
+      129   1.1072260E-12   2.8783012E+01
+      130   5.7378361E-14   2.8783012E+01
+      131   1.1649034E-12   2.8783012E+01
+      132   5.7888465E-14   2.8783012E+01
+      133   1.0095553E-12   2.8783012E+01
+      134   5.3334971E-14   2.8783012E+01
+      135   1.1394762E-12   2.8783012E+01
+      136   5.2311108E-14   2.8783012E+01
+      137   8.8622110E-13   2.8783012E+01
+      138   5.1664951E-14   2.8783012E+01
+      139   1.0373270E-12   2.8783012E+01
+      140   4.9058873E-14   2.8783012E+01
+      141   6.7391068E-13   2.8783012E+01
+      142   4.7625232E-14   2.8783012E+01
+      143   8.5948147E-13   2.8783012E+01
+      144   4.4186995E-14   2.8783012E+01
+      145   6.2781864E-13   2.8783012E+01
+      146   4.3872026E-14   2.8783012E+01
+      147   4.7457282E-13   2.8783012E+01
+      148   4.3781365E-14   2.8783012E+01
+      149   5.7639349E-13   2.8783012E+01
+      150   4.2388240E-14   2.8783012E+01
+      151   4.6446525E-13   2.8783012E+01
+      152   4.1814212E-14   2.8783012E+01
+      153   5.6214343E-13   2.8783012E+01
+      154   3.8284684E-14   2.8783012E+01
+      155   6.7692008E-13   2.8783012E+01
+      156   3.9454497E-14   2.8783012E+01
+      157   4.3762380E-13   2.8783012E+01
+      158   3.7227627E-14   2.8783012E+01
+      159   7.4630862E-13   2.8783012E+01
+      160   3.5051191E-14   2.8783012E+01
+      161   4.0074424E-13   2.8783012E+01
+      162   3.0945593E-14   2.8783012E+01
+      163   4.5033270E-13   2.8783012E+01
+      164   2.8768073E-14   2.8783012E+01
+      165   5.0588345E-13   2.8783012E+01
+      166   2.9397451E-14   2.8783012E+01
+      167   5.7006859E-13   2.8783012E+01
+      168   2.5146153E-14   2.8783012E+01
+      169   5.2309764E-13   2.8783012E+01
+      170   2.4192223E-14   2.8783012E+01
+      171   2.6890849E-13   2.8783012E+01
+      172   2.2303417E-14   2.8783012E+01
+      173   2.2939293E-13   2.8783012E+01
+      174   2.1804077E-14   2.8783012E+01
+      175   7.2156467E-14   2.8783012E+01
+      176   2.0815638E-14   2.8783012E+01
+      177   1.7268168E-13   2.8783012E+01
+      178   1.5875427E-14   2.8783012E+01
+      179   5.5116473E-14   2.8783012E+01
+ 
+    Normalized Power
+ 
+       Power/(4*pi watt) in each Azimuthal mode
+        M       Power        Accumulated    1.-Accumulated
+        0   1.2451233E-04   1.2451233E-04   9.9987549E-01
+        1   9.9421932E-01   9.9434384E-01   5.6561642E-03
+        2   3.1851668E-04   9.9466235E-01   5.3376475E-03
+        3   5.2482496E-03   9.9991060E-01   8.9397917E-05
+        4   1.7699925E-06   9.9991237E-01   8.7627925E-05
+        5   8.3803683E-05   9.9999618E-01   3.8242413E-06
+        6   6.9942351E-08   9.9999625E-01   3.7542990E-06
+        7   3.1789732E-06   9.9999942E-01   5.7532575E-07
+        8   7.3584855E-10   9.9999943E-01   5.7458990E-07
+        9   4.3255674E-07   9.9999986E-01   1.4203317E-07
+       10   5.1791619E-10   9.9999986E-01   1.4151525E-07
+       11   1.3274908E-07   9.9999999E-01   8.7661686E-09
+       12   2.4674786E-11   9.9999999E-01   8.7414938E-09
+       13   8.3015011E-09   1.0000000E+00   4.3999260E-10
+       14   1.3093941E-12   1.0000000E+00   4.3868320E-10
+       15   4.0598769E-10   1.0000000E+00   3.2695513E-11
+       16   4.8682636E-14   1.0000000E+00   3.2646885E-11
+       17   1.1549088E-11   1.0000000E+00   2.1097790E-11
+       18   5.6507020E-15   1.0000000E+00   2.1092128E-11
+       19   2.4174796E-12   1.0000000E+00   1.8674617E-11
+       20   4.3276498E-15   1.0000000E+00   1.8670288E-11
+       21   1.4970710E-12   1.0000000E+00   1.7173263E-11
+       22   5.2551721E-15   1.0000000E+00   1.7168045E-11
+       23   1.9543759E-12   1.0000000E+00   1.5213719E-11
+       24   4.3003374E-15   1.0000000E+00   1.5209389E-11
+       25   1.0660899E-12   1.0000000E+00   1.4143353E-11
+       26   4.6079635E-15   1.0000000E+00   1.4138690E-11
+       27   1.4760255E-12   1.0000000E+00   1.2662649E-11
+       28   4.1834288E-15   1.0000000E+00   1.2658430E-11
+       29   8.9519233E-13   1.0000000E+00   1.1763257E-11
+       30   4.9680148E-15   1.0000000E+00   1.1758261E-11
+       31   1.0741576E-12   1.0000000E+00   1.0684120E-11
+       32   3.9911796E-15   1.0000000E+00   1.0680123E-11
+       33   5.8686610E-13   1.0000000E+00   1.0093260E-11
+       34   4.0653097E-15   1.0000000E+00   1.0089152E-11
+       35   8.0127287E-13   1.0000000E+00   9.2879038E-12
+       36   3.6923205E-15   1.0000000E+00   9.2842400E-12
+       37   4.3859808E-13   1.0000000E+00   8.8455909E-12
+       38   3.9141429E-15   1.0000000E+00   8.8417051E-12
+       39   7.3084169E-13   1.0000000E+00   8.1108453E-12
+       40   3.5742175E-15   1.0000000E+00   8.1072926E-12
+       41   4.4750647E-13   1.0000000E+00   7.6597617E-12
+       42   3.9341050E-15   1.0000000E+00   7.6558759E-12
+       43   5.9729263E-13   1.0000000E+00   7.0585759E-12
+       44   3.6354998E-15   1.0000000E+00   7.0549122E-12
+       45   3.1938980E-13   1.0000000E+00   6.7355010E-12
+       46   3.6659498E-15   1.0000000E+00   6.7318373E-12
+       47   4.7166937E-13   1.0000000E+00   6.2602146E-12
+       48   3.5182868E-15   1.0000000E+00   6.2566619E-12
+       49   3.1917335E-13   1.0000000E+00   5.9374727E-12
+       50   3.8169573E-15   1.0000000E+00   5.9336980E-12
+       51   4.4523150E-13   1.0000000E+00   5.4884985E-12
+       52   3.5140576E-15   1.0000000E+00   5.4849458E-12
+       53   2.7891194E-13   1.0000000E+00   5.2060578E-12
+       54   3.4661031E-15   1.0000000E+00   5.2026161E-12
+       55   3.9554012E-13   1.0000000E+00   4.8070437E-12
+       56   3.4002049E-15   1.0000000E+00   4.8036020E-12
+       57   1.8595961E-13   1.0000000E+00   4.6176396E-12
+       58   3.5024280E-15   1.0000000E+00   4.6140869E-12
+       59   3.4302590E-13   1.0000000E+00   4.2710280E-12
+       60   3.3545947E-15   1.0000000E+00   4.2676973E-12
+       61   1.8058686E-13   1.0000000E+00   4.0870640E-12
+       62   3.2695110E-15   1.0000000E+00   4.0838444E-12
+       63   2.9497251E-13   1.0000000E+00   3.7888581E-12
+       64   3.3019592E-15   1.0000000E+00   3.7855274E-12
+       65   1.5653919E-13   1.0000000E+00   3.6289860E-12
+       66   3.3904629E-15   1.0000000E+00   3.6255443E-12
+       67   2.1705736E-13   1.0000000E+00   3.4084957E-12
+       68   3.2705342E-15   1.0000000E+00   3.4052761E-12
+       69   1.4904341E-13   1.0000000E+00   3.2562841E-12
+       70   3.2661041E-15   1.0000000E+00   3.2530645E-12
+       71   1.7968397E-13   1.0000000E+00   3.0734304E-12
+       72   3.0856012E-15   1.0000000E+00   3.0703218E-12
+       73   1.3626222E-13   1.0000000E+00   2.9340974E-12
+       74   3.0768186E-15   1.0000000E+00   2.9309888E-12
+       75   1.9015071E-13   1.0000000E+00   2.7408076E-12
+       76   3.0863206E-15   1.0000000E+00   2.7376990E-12
+       77   9.6025956E-14   1.0000000E+00   2.6416647E-12
+       78   3.1242019E-15   1.0000000E+00   2.6385560E-12
+       79   1.8057644E-13   1.0000000E+00   2.4580338E-12
+       80   3.0729456E-15   1.0000000E+00   2.4549252E-12
+       81   9.5015177E-14   1.0000000E+00   2.3598901E-12
+       82   2.8636547E-15   1.0000000E+00   2.3570035E-12
+       83   1.5046823E-13   1.0000000E+00   2.2065683E-12
+       84   2.9657260E-15   1.0000000E+00   2.2035707E-12
+       85   9.2500769E-14   1.0000000E+00   2.1110891E-12
+       86   2.8995048E-15   1.0000000E+00   2.1082025E-12
+       87   1.4049082E-13   1.0000000E+00   1.9677593E-12
+       88   2.8830003E-15   1.0000000E+00   1.9648727E-12
+       89   9.1439033E-14   1.0000000E+00   1.8733903E-12
+       90   2.7537471E-15   1.0000000E+00   1.8706148E-12
+       91   1.1477895E-13   1.0000000E+00   1.7558177E-12
+       92   2.6671592E-15   1.0000000E+00   1.7531532E-12
+       93   8.5014279E-14   1.0000000E+00   1.6681101E-12
+       94   2.7460249E-15   1.0000000E+00   1.6653345E-12
+       95   1.0508107E-13   1.0000000E+00   1.5603074E-12
+       96   2.5203269E-15   1.0000000E+00   1.5577539E-12
+       97   6.3415759E-14   1.0000000E+00   1.4943602E-12
+       98   2.5758367E-15   1.0000000E+00   1.4918067E-12
+       99   1.0702952E-13   1.0000000E+00   1.3847812E-12
+      100   2.5308757E-15   1.0000000E+00   1.3822277E-12
+      101   5.7475436E-14   1.0000000E+00   1.3247181E-12
+      102   2.5260813E-15   1.0000000E+00   1.3221646E-12
+      103   8.9028679E-14   1.0000000E+00   1.2331247E-12
+      104   2.6095593E-15   1.0000000E+00   1.2304602E-12
+      105   4.9906559E-14   1.0000000E+00   1.1805001E-12
+      106   2.4361307E-15   1.0000000E+00   1.1780577E-12
+      107   6.5946326E-14   1.0000000E+00   1.1121104E-12
+      108   2.4490171E-15   1.0000000E+00   1.1096679E-12
+      109   5.4304661E-14   1.0000000E+00   1.0553780E-12
+      110   2.3722778E-15   1.0000000E+00   1.0530465E-12
+      111   5.9143344E-14   1.0000000E+00   9.9387165E-13
+      112   2.3661504E-15   1.0000000E+00   9.9154018E-13
+      113   5.0456541E-14   1.0000000E+00   9.4113606E-13
+      114   2.3448374E-15   1.0000000E+00   9.3880459E-13
+      115   5.6642783E-14   1.0000000E+00   8.8218322E-13
+      116   2.1732873E-15   1.0000000E+00   8.7996277E-13
+      117   3.8599886E-14   1.0000000E+00   8.4132701E-13
+      118   2.1517710E-15   1.0000000E+00   8.3921758E-13
+      119   6.2875010E-14   1.0000000E+00   7.7637896E-13
+      120   2.0881626E-15   1.0000000E+00   7.7426954E-13
+      121   4.0132493E-14   1.0000000E+00   7.3419049E-13
+      122   2.1445098E-15   1.0000000E+00   7.3208106E-13
+      123   5.6560991E-14   1.0000000E+00   6.7557071E-13
+      124   2.0811480E-15   1.0000000E+00   6.7346129E-13
+      125   4.3139073E-14   1.0000000E+00   6.3027361E-13
+      126   1.9851389E-15   1.0000000E+00   6.2827521E-13
+      127   4.8375284E-14   1.0000000E+00   5.7986949E-13
+      128   2.0468433E-15   1.0000000E+00   5.7787108E-13
+      129   3.8468038E-14   1.0000000E+00   5.3945737E-13
+      130   1.9934801E-15   1.0000000E+00   5.3745897E-13
+      131   4.0471907E-14   1.0000000E+00   4.9693583E-13
+      132   2.0112025E-15   1.0000000E+00   4.9493742E-13
+      133   3.5074691E-14   1.0000000E+00   4.5985438E-13
+      134   1.8530018E-15   1.0000000E+00   4.5796700E-13
+      135   3.9588497E-14   1.0000000E+00   4.1833204E-13
+      136   1.8174300E-15   1.0000000E+00   4.1655568E-13
+      137   3.0789728E-14   1.0000000E+00   3.8580250E-13
+      138   1.7949807E-15   1.0000000E+00   3.8402614E-13
+      139   3.6039556E-14   1.0000000E+00   3.4794390E-13
+      140   1.7044385E-15   1.0000000E+00   3.4627856E-13
+      141   2.3413487E-14   1.0000000E+00   3.2285286E-13
+      142   1.6546299E-15   1.0000000E+00   3.2118752E-13
+      143   2.9860721E-14   1.0000000E+00   2.9132252E-13
+      144   1.5351762E-15   1.0000000E+00   2.8976821E-13
+      145   2.1812125E-14   1.0000000E+00   2.6800784E-13
+      146   1.5242333E-15   1.0000000E+00   2.6645353E-13
+      147   1.6487949E-14   1.0000000E+00   2.4991120E-13
+      148   1.5210835E-15   1.0000000E+00   2.4835689E-13
+      149   2.0025475E-14   1.0000000E+00   2.2837288E-13
+      150   1.4726826E-15   1.0000000E+00   2.2692959E-13
+      151   1.6136784E-14   1.0000000E+00   2.1083135E-13
+      152   1.4527393E-15   1.0000000E+00   2.0938806E-13
+      153   1.9530389E-14   1.0000000E+00   1.8984814E-13
+      154   1.3301139E-15   1.0000000E+00   1.8851587E-13
+      155   2.3518042E-14   1.0000000E+00   1.6497914E-13
+      156   1.3707564E-15   1.0000000E+00   1.6364687E-13
+      157   1.5204239E-14   1.0000000E+00   1.4843682E-13
+      158   1.2933889E-15   1.0000000E+00   1.4710455E-13
+      159   2.5928788E-14   1.0000000E+00   1.2112533E-13
+      160   1.2177736E-15   1.0000000E+00   1.1990409E-13
+      161   1.3922943E-14   1.0000000E+00   1.0602630E-13
+      162   1.0751339E-15   1.0000000E+00   1.0491608E-13
+      163   1.5645781E-14   1.0000000E+00   8.9261931E-14
+      164   9.9948100E-16   1.0000000E+00   8.8262730E-14
+      165   1.7575765E-14   1.0000000E+00   7.0721207E-14
+      166   1.0213473E-15   1.0000000E+00   6.9722006E-14
+      167   1.9805731E-14   1.0000000E+00   4.9960036E-14
+      168   8.7364564E-16   1.0000000E+00   4.9071858E-14
+      169   1.8173833E-14   1.0000000E+00   3.0864200E-14
+      170   8.4050352E-16   1.0000000E+00   2.9976022E-14
+      171   9.3426112E-15   1.0000000E+00   2.0650148E-14
+      172   7.7488128E-16   1.0000000E+00   1.9872992E-14
+      173   7.9697335E-15   1.0000000E+00   1.1879386E-14
+      174   7.5753287E-16   1.0000000E+00   1.1102230E-14
+      175   2.5069116E-15   1.0000000E+00   8.5487173E-15
+      176   7.2319181E-16   1.0000000E+00   7.7715612E-15
+      177   5.9994306E-15   1.0000000E+00   1.7763568E-15
+      178   5.5155544E-16   1.0000000E+00   1.2212453E-15
+      179   1.9148960E-15   1.0000000E+00  -6.6613381E-16
+ 
+       Power/(4*pi watt) in each Polar mode
+        N       Power        Accumulated    1.-Accumulated
+        1   5.1194741E-01   5.1194741E-01   4.8805259E-01
+        2   2.3817403E-01   7.5012145E-01   2.4987855E-01
+        3   1.8131780E-01   9.3143925E-01   6.8560755E-02
+        4   3.8796086E-02   9.7023533E-01   2.9764669E-02
+        5   2.3539016E-02   9.9377435E-01   6.2256527E-03
+        6   1.7642548E-03   9.9553860E-01   4.4613979E-03
+        7   2.8275827E-03   9.9836618E-01   1.6338152E-03
+        8   6.9711009E-04   9.9906329E-01   9.3670508E-04
+        9   3.7402210E-04   9.9943732E-01   5.6268299E-04
+       10   2.9743148E-04   9.9973475E-01   2.6525150E-04
+       11   1.7399253E-04   9.9990874E-01   9.1258972E-05
+       12   6.8051868E-05   9.9997679E-01   2.3207104E-05
+       13   1.8870965E-05   9.9999566E-01   4.3361394E-06
+       14   3.7177271E-06   9.9999938E-01   6.1841231E-07
+       15   5.4014764E-07   9.9999992E-01   7.8264672E-08
+       16   6.7291053E-08   9.9999999E-01   1.0973619E-08
+       17   9.1079559E-09   1.0000000E+00   1.8656626E-09
+       18   1.5109433E-09   1.0000000E+00   3.5471936E-10
+       19   2.5589702E-10   1.0000000E+00   9.8822395E-11
+       20   3.7237520E-11   1.0000000E+00   6.1584848E-11
+       21   7.0894421E-12   1.0000000E+00   5.4495408E-11
+       22   2.7600479E-12   1.0000000E+00   5.1735394E-11
+       23   3.0210474E-12   1.0000000E+00   4.8714366E-11
+       24   2.6825093E-12   1.0000000E+00   4.6031845E-11
+       25   5.5855331E-13   1.0000000E+00   4.5473292E-11
+       26   1.3126477E-12   1.0000000E+00   4.4160675E-11
+       27   2.0977286E-12   1.0000000E+00   4.2062909E-11
+       28   1.8861991E-12   1.0000000E+00   4.0176751E-11
+       29   1.9711858E-12   1.0000000E+00   3.8205550E-11
+       30   1.4593770E-12   1.0000000E+00   3.6746162E-11
+       31   1.5407357E-12   1.0000000E+00   3.5205394E-11
+       32   1.0529423E-12   1.0000000E+00   3.4152459E-11
+       33   1.5714617E-12   1.0000000E+00   3.2581049E-11
+       34   1.8946728E-12   1.0000000E+00   3.0686342E-11
+       35   6.1523183E-13   1.0000000E+00   3.0071057E-11
+       36   3.0008943E-13   1.0000000E+00   2.9770963E-11
+       37   5.5638823E-13   1.0000000E+00   2.9214631E-11
+       38   7.2779813E-13   1.0000000E+00   2.8486880E-11
+       39   6.9317330E-13   1.0000000E+00   2.7793656E-11
+       40   5.9954863E-13   1.0000000E+00   2.7194136E-11
+       41   9.2649964E-13   1.0000000E+00   2.6267655E-11
+       42   2.9596481E-13   1.0000000E+00   2.5971669E-11
+       43   5.8420302E-13   1.0000000E+00   2.5387470E-11
+       44   1.0932829E-12   1.0000000E+00   2.4294233E-11
+       45   7.5688839E-13   1.0000000E+00   2.3537394E-11
+       46   2.4619917E-13   1.0000000E+00   2.3291147E-11
+       47   3.2379749E-13   1.0000000E+00   2.2967295E-11
+       48   5.0841035E-13   1.0000000E+00   2.2458924E-11
+       49   3.3978947E-13   1.0000000E+00   2.2119084E-11
+       50   1.1938502E-13   1.0000000E+00   2.1999735E-11
+       51   2.5230331E-13   1.0000000E+00   2.1747382E-11
+       52   2.1749479E-13   1.0000000E+00   2.1529889E-11
+       53   6.7687109E-13   1.0000000E+00   2.0852986E-11
+       54   8.9611491E-13   1.0000000E+00   1.9956925E-11
+       55   1.0639959E-12   1.0000000E+00   1.8892887E-11
+       56   5.0856643E-13   1.0000000E+00   1.8384294E-11
+       57   5.5095819E-13   1.0000000E+00   1.7833290E-11
+       58   2.7772834E-13   1.0000000E+00   1.7555513E-11
+       59   2.8651649E-13   1.0000000E+00   1.7268964E-11
+       60   3.9036263E-13   1.0000000E+00   1.6878610E-11
+       61   2.7862603E-13   1.0000000E+00   1.6599944E-11
+       62   3.5812775E-13   1.0000000E+00   1.6241786E-11
+       63   3.0132741E-13   1.0000000E+00   1.5940471E-11
+       64   2.5431633E-13   1.0000000E+00   1.5686119E-11
+       65   3.9276973E-13   1.0000000E+00   1.5293322E-11
+       66   4.3300569E-13   1.0000000E+00   1.4860335E-11
+       67   4.6083586E-13   1.0000000E+00   1.4399482E-11
+       68   1.0773461E-13   1.0000000E+00   1.4291790E-11
+       69   1.7564971E-13   1.0000000E+00   1.4116153E-11
+       70   1.3037908E-13   1.0000000E+00   1.3985813E-11
+       71   1.5771887E-13   1.0000000E+00   1.3828050E-11
+       72   1.3495798E-13   1.0000000E+00   1.3693047E-11
+       73   1.3004615E-13   1.0000000E+00   1.3563040E-11
+       74   1.6098139E-13   1.0000000E+00   1.3402057E-11
+       75   1.9183180E-13   1.0000000E+00   1.3210211E-11
+       76   3.1281062E-13   1.0000000E+00   1.2897350E-11
+       77   5.1657323E-13   1.0000000E+00   1.2380763E-11
+       78   2.6704791E-13   1.0000000E+00   1.2113754E-11
+       79   3.6582384E-13   1.0000000E+00   1.1747936E-11
+       80   1.6623035E-13   1.0000000E+00   1.1581736E-11
+       81   1.6241690E-13   1.0000000E+00   1.1419310E-11
+       82   8.4520788E-14   1.0000000E+00   1.1334822E-11
+       83   2.0143912E-13   1.0000000E+00   1.1133428E-11
+       84   1.9979660E-13   1.0000000E+00   1.0933587E-11
+       85   1.2950346E-13   1.0000000E+00   1.0804135E-11
+       86   1.8633436E-13   1.0000000E+00   1.0617840E-11
+       87   2.5357266E-13   1.0000000E+00   1.0364265E-11
+       88   2.0460579E-13   1.0000000E+00   1.0159651E-11
+       89   1.7836334E-13   1.0000000E+00   9.9812381E-12
+       90   1.2354725E-13   1.0000000E+00   9.8576702E-12
+       91   1.1637111E-13   1.0000000E+00   9.7413189E-12
+       92   1.1775644E-13   1.0000000E+00   9.6235242E-12
+       93   1.6451360E-13   1.0000000E+00   9.4589891E-12
+       94   1.8838779E-13   1.0000000E+00   9.2705843E-12
+       95   1.7574343E-13   1.0000000E+00   9.0948360E-12
+       96   2.4529298E-13   1.0000000E+00   8.8495877E-12
+       97   1.8170130E-13   1.0000000E+00   8.6678442E-12
+       98   1.7754847E-13   1.0000000E+00   8.4903196E-12
+       99   1.5256375E-13   1.0000000E+00   8.3377749E-12
+      100   9.9993415E-14   1.0000000E+00   8.2377438E-12
+      101   2.2215616E-13   1.0000000E+00   8.0155882E-12
+      102   1.1609722E-13   1.0000000E+00   7.8994589E-12
+      103   1.6835983E-13   1.0000000E+00   7.7311491E-12
+      104   1.5989994E-13   1.0000000E+00   7.5712769E-12
+      105   2.0462470E-13   1.0000000E+00   7.3666628E-12
+      106   1.4298091E-13   1.0000000E+00   7.2236661E-12
+      107   1.1076387E-13   1.0000000E+00   7.1128659E-12
+      108   8.4856577E-14   1.0000000E+00   7.0280448E-12
+      109   1.0158353E-13   1.0000000E+00   6.9264594E-12
+      110   9.4431826E-14   1.0000000E+00   6.8319794E-12
+      111   1.1236908E-13   1.0000000E+00   6.7196249E-12
+      112   7.1719164E-14   1.0000000E+00   6.6479044E-12
+      113   7.1928465E-14   1.0000000E+00   6.5759620E-12
+      114   9.1004805E-14   1.0000000E+00   6.4849237E-12
+      115   1.7471687E-13   1.0000000E+00   6.3101746E-12
+      116   2.3361640E-13   1.0000000E+00   6.0765837E-12
+      117   1.2716024E-13   1.0000000E+00   5.9494631E-12
+      118   8.9530157E-14   1.0000000E+00   5.8599792E-12
+      119   1.6275510E-13   1.0000000E+00   5.6972205E-12
+      120   7.7788841E-14   1.0000000E+00   5.6193938E-12
+      121   6.6799914E-14   1.0000000E+00   5.5525584E-12
+      122   8.3344333E-14   1.0000000E+00   5.4691807E-12
+      123   1.0460211E-13   1.0000000E+00   5.3645977E-12
+      124   1.3224249E-13   1.0000000E+00   5.2323701E-12
+      125   1.4910445E-13   1.0000000E+00   5.0832671E-12
+      126   2.3890694E-13   1.0000000E+00   4.8443471E-12
+      127   1.8360639E-13   1.0000000E+00   4.6607163E-12
+      128   7.6465145E-14   1.0000000E+00   4.5842219E-12
+      129   1.1941889E-13   1.0000000E+00   4.4647619E-12
+      130   7.2303823E-14   1.0000000E+00   4.3924864E-12
+      131   7.1048479E-14   1.0000000E+00   4.3214321E-12
+      132   7.1408395E-14   1.0000000E+00   4.2500448E-12
+      133   8.6794032E-14   1.0000000E+00   4.1632253E-12
+      134   5.4716260E-14   1.0000000E+00   4.1084913E-12
+      135   6.4211492E-14   1.0000000E+00   4.0443204E-12
+      136   9.2025255E-14   1.0000000E+00   3.9522829E-12
+      137   1.2960244E-13   1.0000000E+00   3.8227199E-12
+      138   8.9554102E-14   1.0000000E+00   3.7331249E-12
+      139   9.6947608E-14   1.0000000E+00   3.6362025E-12
+      140   8.5625341E-14   1.0000000E+00   3.5506043E-12
+      141   1.2025495E-13   1.0000000E+00   3.4303671E-12
+      142   6.7122762E-14   1.0000000E+00   3.3631986E-12
+      143   9.4743862E-14   1.0000000E+00   3.2684966E-12
+      144   1.0871983E-13   1.0000000E+00   3.1598058E-12
+      145   7.9647745E-14   1.0000000E+00   3.0802028E-12
+      146   8.4319594E-14   1.0000000E+00   2.9959368E-12
+      147   1.0237962E-13   1.0000000E+00   2.8935743E-12
+      148   1.3709698E-13   1.0000000E+00   2.7564617E-12
+      149   9.8905074E-14   1.0000000E+00   2.6575409E-12
+      150   8.9561969E-14   1.0000000E+00   2.5679459E-12
+      151   1.1072295E-13   1.0000000E+00   2.4572566E-12
+      152   4.5889172E-14   1.0000000E+00   2.4114044E-12
+      153   6.5490971E-14   1.0000000E+00   2.3459013E-12
+      154   1.0884216E-13   1.0000000E+00   2.2370994E-12
+      155   1.1580717E-13   1.0000000E+00   2.1213031E-12
+      156   5.7067000E-14   1.0000000E+00   2.0642377E-12
+      157   5.5884934E-14   1.0000000E+00   2.0083935E-12
+      158   7.1702873E-14   1.0000000E+00   1.9366730E-12
+      159   9.7099615E-14   1.0000000E+00   1.8395285E-12
+      160   7.8804877E-14   1.0000000E+00   1.7607027E-12
+      161   6.1993033E-14   1.0000000E+00   1.6987522E-12
+      162   9.0019279E-14   1.0000000E+00   1.6087132E-12
+      163   9.6981788E-14   1.0000000E+00   1.5116797E-12
+      164   7.2452182E-14   1.0000000E+00   1.4391821E-12
+      165   1.1200017E-13   1.0000000E+00   1.3271606E-12
+      166   8.6453357E-14   1.0000000E+00   1.2406742E-12
+      167   8.0476210E-14   1.0000000E+00   1.1601831E-12
+      168   1.0407870E-13   1.0000000E+00   1.0561552E-12
+      169   1.0557010E-13   1.0000000E+00   9.5057295E-13
+      170   9.1882585E-14   1.0000000E+00   8.5864649E-13
+      171   7.4252519E-14   1.0000000E+00   7.8437257E-13
+      172   6.1124150E-14   1.0000000E+00   7.2319928E-13
+      173   1.0864081E-13   1.0000000E+00   6.1450844E-13
+      174   8.2996512E-14   1.0000000E+00   5.3146376E-13
+      175   9.2115954E-14   1.0000000E+00   4.3931525E-13
+      176   9.7730669E-14   1.0000000E+00   3.4161562E-13
+      177   9.9806286E-14   1.0000000E+00   2.4180657E-13
+      178   8.6362387E-14   1.0000000E+00   1.5543122E-13
+      179   8.2381635E-14   1.0000000E+00   7.3052675E-14
+      180   7.3821919E-14   1.0000000E+00   0.0000000E+00
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      20/10     10/10      -26.45    -26.45    -28.45
+      40/10     20/10      -26.46    -26.46    -71.59
+      80/10     40/10      -26.47    -26.47    -91.05  *
+      30/10     80/10      -26.47    -26.47    -84.65  *
+      25/10     80/10      -26.47    -26.47    -79.75
+      28/10     80/10      -26.47    -26.47    -80.08  *
+      27/10     80/10      -26.47    -26.47    -80.67  *
+      26/10     80/10      -26.47    -26.47    -81.02  *
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      10/20     10/10      -26.45    -26.45      1.67
+      10/40     10/20      -30.00    -26.47    -21.93
+      10/80     10/40      -29.99    -26.47    -79.06
+     10/160     10/80      -29.99    -26.47    -90.25  *
+      10/60    10/160      -29.99    -26.47    -85.72  *
+      10/50    10/160      -29.99    -26.47    -82.09  *
+      10/45    10/160      -29.99    -26.47    -81.26  *
+      10/43    10/160      -29.99    -26.47    -79.64
+      10/44    10/160      -29.99    -26.47    -80.08  *
+  PO1 =   26  PO2 =   44  Face =    1, Final PO-values from auto-convergence
+ 
+  Edge 1:
+  Max. value: ptd = 470
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+        ptd       ptd       [dBi]     [dBi]      [dB]
+         20        10      -61.24    -26.47    -35.51
+         40        20      -61.99    -26.47    -39.11
+         80        40      -61.98    -26.47    -99.07  *
+         30        80      -61.98    -26.47    -81.83  *
+         25        80      -61.98    -26.47    -56.53
+         28        80      -61.98    -26.47    -71.74
+         29        80      -61.98    -26.47    -78.12
+  PTD =   30              Edge =    1, Final PTD-value from auto-convergence.
+ 
+ ----- TASK No. 2 -----     Started at 23:39:56 on December  4, 2017
+ po_single_face_scatterer_MR get_currents ( source :
+ sequence(ref(po_single_face_scatterer_SR)), auto_convergence_of_po : on,
+ convergence_on_output_grid : sequence(ref(spherical_cut)))
+ 
+ 
+  *** Object name:  po_single_face_scatterer_MR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Get_currents message received
+ 
+  Source : po_single_face_scatterer_SR
+  PO-auto-convergence selection : on
+  Convergence test on output grid : spherical_cut
+ 
+ 
+  *** Object name:  po_single_face_scatterer_MR
+  *** Class name :  po_single_face_scatterer
+  *** Message    :  Initialization
+ 
+ 
+  Auto-convergence with desired accuracy of -80.00 dB.
+ 
+  Face 1:
+  Max. values: po1/po2 = 580/14100
+ 
+  Name of currents file: tmp_0004
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 1
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 450.000 MHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        44         1
+ 
+    Edge No.     PTD1
+          1        30
+ 
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      20/10     10/10       34.66     34.66     -8.74
+      40/10     20/10       34.66     34.66    -13.85
+      80/10     40/10       34.66     34.66    -30.79
+     160/10     80/10       34.66     34.66   -141.50  *
+      60/10    160/10       34.66     34.66   -131.54  *
+      50/10    160/10       34.66     34.66    -97.26  *
+      45/10    160/10       34.66     34.66    -58.31
+      48/10    160/10       34.66     34.66    -83.13  *
+      47/10    160/10       34.66     34.66    -75.65
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+    po1/po2   po1/po2       [dBi]     [dBi]      [dB]
+      10/20     10/10       34.66     34.66     -8.47
+      10/40     10/20       34.66     34.66    -13.59
+      10/80     10/40       34.66     34.66    -16.81
+     10/160     10/80       34.66     34.66    -22.81
+     10/320    10/160       34.66     34.66   -103.25  *
+     10/120    10/320       34.66     34.66    -30.85
+     10/140    10/320       34.66     34.66    -70.16
+     10/150    10/320       34.66     34.66   -102.03  *
+     10/145    10/320       34.66     34.66    -87.00  *
+     10/143    10/320       34.66     34.66    -79.40
+  PO1 =   48  PO2 =  145  Face =    1, Final PO-values from auto-convergence
+ 
+  Edge 1:
+  Max. value: ptd = 1410
+ 
+ PO convergence
+  Test-grid  Ref-grid       P_max   P_level  Accuracy
+        ptd       ptd       [dBi]     [dBi]      [dB]
+         20        10       -6.36     34.66    -44.37
+         40        20       -6.42     34.66    -47.22
+         80        40       -6.44     34.66    -48.83
+        160        80       -6.44     34.66    -52.54
+        320       160       -6.44     34.66   -102.11  *
+        120       320       -6.44     34.66    -58.78
+        140       320       -6.44     34.66    -77.22
+        150       320       -6.44     34.66   -100.81  *
+        145       320       -6.44     34.66    -98.11  *
+        143       320       -6.44     34.66    -88.79  *
+  PTD =  143              Edge =    1, Final PTD-value from auto-convergence.
+ 
+ ----- TASK No. 3 -----     Started at 23:39:59 on December  4, 2017
+ spherical_cut get_field ( source : sequence(ref(po_single_face_scatterer_MR)))
+ 
+ 
+  *** Object name:  spherical_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Get_field message received
+ 
+  Source : po_single_face_scatterer_MR
+ 
+  Name of currents file: tmp_0005
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 1
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 450.000 MHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        48       145         1
+ 
+    Edge No.     PTD1
+          1       143
+ 
+ 
+ 
+  *** Object name:  spherical_cut
+  *** Class name :  spherical_cut
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- TASK No. 4 -----     Started at 23:40:00 on December  4, 2017
+ spherical_grid add_field ( source : sequence(ref(po_single_face_scatterer_SR),
+ ref(band1_pattern_450MHz)))
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Add_field message received
+ 
+  Source : po_single_face_scatterer_SR
+  Source : band1_pattern_450MHz
+ 
+  Name of currents file: tmp_0004
+ 
+  Control values found in the file:
+    No. of frequencies: 1
+    No. of beams      : 1
+    No. of faces      : 1
+    No. of edges      : 1
+    No. of gaps       : 0
+ 
+  Frequency number  1 : 450.000 MHz
+ 
+    Face No.      PO1       PO2     Partitions
+          1        26        44         1
+ 
+    Edge No.     PTD1
+          1        30
+ 
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ 
+  *** Object name:  spherical_grid
+  *** Class name :  spherical_grid
+  *** Message    :  Field calculated
+ 
+  Frequency No. :     1
+  Beam No. :     1
+ 
+ ----- END OF TASKS -----     Completed at 23:40:06 on December  4, 2017
+ Total time was 1:59 min
+ 
+ GRASP SN: 005970
+ Program stopped at 23:40:06 on  4 December 2017
+ 

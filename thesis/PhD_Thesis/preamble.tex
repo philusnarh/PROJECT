@@ -1,0 +1,179 @@
+\begin{titlepage}
+
+\newcommand{\HRule}{\rule{\linewidth}{0.5mm}} % Defines a new command for the horizontal lines, change thickness here
+
+\center % Center everything on the page
+ 
+%----------------------------------------------------------------------------------------
+%	LOGO SECTION
+%----------------------------------------------------------------------------------------
+
+\includegraphics[width=0.4\columnwidth]{Images/Rhode}\\[1cm] % Include a department/university logo - this will require the graphicx package
+
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\HRule \\[0.4cm]
+{ \huge Exploring Intensity Mapping Techniques Via Simulations}\\[0.4cm]
+% { \huge {\sc meqsilhouette}: Exploring Intensity Mapping Techniques Via Simulations}\\[0.4cm]
+\HRule \\[1.5cm]
+
+
+\begin{center}
+ {\large A thesis submitted in fulfilment of the requirements for the degree of \textbf{Doctor of Philosophy}} \\
+%  {\large \textbf{MASTER OF SCIENCE}} \\
+ {\large in the Department of Physics and Electronics,} \\
+ {\large Rhodes University}
+\end{center}
+\vspace{0.02\textheight}
+
+%----------------------------------------------------------------------------------------
+%	AUTHOR SECTIONSpace & Atmospheric Research Group
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}{0.45\textwidth}
+\begin{flushleft}\large 
+\emph{Author:} \\
+Theophilus  {\sc Ansah-Narh}\\
+\end{flushleft}
+\end{minipage}
+\begin{minipage}{0.45\textwidth}
+
+\begin{flushright} \large
+\emph{Supervisors:} \\
+Prof. Oleg M. {\sc Smirnov} \\
+Prof. Filipe B. {\sc Abdalla} \\
+Dr. Khan M. B. {\sc Asad} \\
+\end{flushright}
+\end{minipage}\\[2cm]
+
+\vfill
+{\large February 02, 2019}\\[4cm]
+% \vfill
+
+% {\large \today}\\[4cm]
+
+\end{titlepage}
+%%
+
+
+
+%**** DECLARATION **************
+% ******************************
+\chapter*{Statement of Originality}
+\vspace*{-2em}
+%  I acknowledge that plagiarism is wrong and hereby declare that the work contained in this document and in the supporting software is my own, save for that which is properly acknowledged. 
+% I recognise that much of the work in this thesis has already been presented in our recent paper \citep{Blecher_2016}.
+% This thesis is essentially an expanded version of the paper and as the latter was published first, some of the material from it has been reproduced directly. 
+% For paragraphs reproduced directly, we indent the text, place it in quotations and cite \citep{Blecher_2016} after the quotation. In addition, notes have been made at the beginning of certain sections or in the captions of figures to denote reproduction of material from our paper.
+
+ I, {\sc Ansah-Narh} Theophilus, assert that the ideas contained in this thesis are my own, and so the thesis has not been formerly put forward for a qualification at any 
+ other tertiary institution. 
+ \\~\\
+%  \vspace*{2em}
+ \noindent Signed:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line for the signature
+ 
+\noindent Date:\\
+\rule[0.5em]{25em}{0.5pt} % This prints a line to write the date
+\addcontentsline{toc}{chapter}{Statement of Originality}
+%%
+%****** PUBLICATION **************
+% ******************************
+\chapter*{Publications}
+\vspace*{-2em}
+%%
+This research is largely drawn from the following publications:
+
+\begin{itemize}
+ \item T. Ansah-Narh, F. B. Abdalla, O. M. Smirnov, K. M. B. Asad and J. R. Shaw, (2018). Simulations of Systematic Direction-dependent Instrumental Effects
+in Intensity Mapping Experiments. \emph{Monthly Notices of the Royal Astronomical Society}, 481 (2), 2694--2710.
+
+\item K. M. B. Asad, J. N. Girard, M. de Villiers, T. Ansah-Narh, K. Iheanetu, O. Smirnov, M. G. Santos, R. Lehmensiek,
+K. Thorat, S. Makhathini and others, Primary Beam Effects of Radio Astronomy Antennas – II. Modelling the MeerKAT L-band beam using
+holography. \emph{Monthly Notices of the Royal Astronomical Society}, accepted.
+\end{itemize}
+
+\noindent I hereby confirm that some of the text and figures from these have been reproduced directly. In addition, where I have mentioned the work published by others, credit has been given to this effect. 
+%%
+\addcontentsline{toc}{chapter}{Publications}
+\chapter*{Abstract} 
+%2 paragraphs : 1 intro, 2. Results
+%Intro
+%eht
+ \vspace*{-2em}
+% 
+
+The study used intensity mapping technique to observe the combined radio emissions of CO and HI emanating from a diffuse source. Antenna elements with short separations like
+KAT-7 (not in operation now) and SKA1-mid can be used for such observation. Despite the potential of this technique, it is subject to exact foreground reduction of continuum signal
+from the Milky Way galaxy and other radio sources beyond. In addition, the signal is dominated by direction-dependent effects and the primary beam being the most serious effect,
+since it controls the full intensity of the measured signal. Furthermore, the inaccuracies in the receivers, cause part of the foreground to seep into the absolute intensity, making
+it difficult to observe the CO or HI signal. For the current on-going SKA instruments and future aperture arrays, these will be affected by antenna pointing errors and polarization
+leakages. To address these problems, first, we create a dense set of dipole positions with a complete secondary blockage to mimic the illumination pattern of KAT-7-like dish. Second,
+we use Zernike model to reconstruct MeerKAT L-band beams and then third, we try to simulate EM beams of SKA1-mid as an optical telescope. Next we perturb these beams by introducing
+realistic errors in them. We then simulate these beams (true and corrupted) with the foreground to estimate for the CO and HI signal. At the end, our simulation shows that,
+if we consider a correct model of the primary beam, then the intrinsic partial leakage of linear polarization ($|Q + iU|_{T} \longrightarrow I$) is given at $\approx 1.0 \%$. 
+Furthermore, when we correct for the beam errors in Stokes $I$ then, it is possible to evaluate the angular spectrum of both CO and HI  at a multipole moment of $l \lesssim 50$, 
+however, this is vice versa if we do calibrate for the beam erros. Finally, the study shows that, Zernike and convolution techniques are good models for intensity mapping experiments. 
+%%
+\addcontentsline{toc}{chapter}{Abstract}
+
+\chapter*{Acknowledgements}
+%  \vspace*{-0.2\textheight}
+% \hspace*{-0.6in}
+%  \raggedbottom
+ \vspace*{-2em}
+ The completion of this research is made up of immense inputs from many people to whom I owe a debt of gratitude. 
+First and foremost, I thank my supervisors: Prof. Oleg M. Smirnov who doubles as the 
+SKA Chair in Radio Astronomy Techniques and Technologies (RATT), which is hosted by Rhodes University 
+and my main supervisor, particularly, for the strong affection he puts in everything he does and for his enormous understanding 
+in Computational Mathematics and Radio Interferometry, Prof. Filipe B. Abdalla, for his expertise in Cosmology and Intensity Mapping Experiments and for the
+patience he had in supporting me especially during the first year of the research. Also, Dr. Khan M. B. Asad for his understanding in Intensity Mapping Experiments.
+I also show my appreciation to everyone who directly took part in the realisation of this work, particularly 
+to Dr. Richard Shaw for helping me out with the foreground simulations and Dr. Jamie Leech for teaching me how to use the {\tt GRASP} software.
+% I acknowledge many individuals, who even if in a less technical way, have been and are of vital importance for me throughout this research experience.
+My course mates deserve the best recognition. Sphe, Marcel, Ridhima, Liju, Kela, Alex and the others 
+have been wonderful companions throughout the study period. I would like to thank my family, Mr. Francis D. Narh (father),
+Mrs. Salome Nortey (mother), Samuel Annor Narh (brother), Esther Amatsu Narh, Christiana Koryoonmaatso Narh (sisters), Patricia Opoku (wife), Adelaide and Salome (daughters) 
+for their love and trust. Lastly, I am very grateful to the SKA and NRF for supporting this research.
+% Without them this accomplishment would have been unachievable.
+ \addcontentsline{toc}{chapter}{Acknowledgements}
+% 
+% This thesis is the culmination of the efforts of many individuals to whom I owe my most sincere appreciation. 
+% First of all I would like to thank my supervisors: Prof. Oleg M. Smirnov who doubles as the 
+% SKA Chair in Radio Astronomy Techniques and Technologies (RATT), which is hosted by Rhodes University 
+% and my main supervisor, especially for the passion he brings to everything he does and for his great knowledge
+% in Mathematics and Radio Interferometry, Dr. Filipe B. Abdalla, for his expertise in Cosmology and Intensity Mapping Experiments and for the
+% patience he had in supporting me especially during the first year of the research. Also, Dr. Khan M. B. Asad for his understanding in Intensity Mapping Experiments.
+% I would like to thank everybody who was directly involved in the realisation of this project, particularly 
+% to Dr. Richard Shaw for helping me out with the foreground simulations and Dr. Jamie Leech for teaching me how to use the GRASP software.
+% I acknowledge many individuals, who even if in a less technical way, have been and are of vital importance for me throughout this research experience.
+% My course mates deserve the best recognition. Sphe, Marcel, Ridhima, Liju, Kela, Alex and the others 
+% have been wonderful companions throughout the study period. I would like to thank my family, Mr. Francis D. Narh (father),
+% Mrs. Salome Nortey (mother), Samuel Annor Narh (brother), Esther Amatsu Narh, Christiana Koryoonmaatso Narh (sisters), Patricia Opoku (wife) 
+% and Adelaide Tsako Doku (daughter) for their love and trust. Lastly, I am very grateful to the SKA and NRF for supporting this research.
+% Without them this accomplishment would have been unachievable.
+
+% \chapter*{Plagiarism declaration}
+%  \addcontentsline{toc}{chapter}{Plagiarism}
+%  I acknowledge that plagiarism is wrong and hereby declare that the work contained in this document and in the supporting software is my own, save for that which is properly acknowledged. I recognise that much of the work in this thesis has already been presented in our recent paper \citep{Blecher_2016}. This thesis is essentially an expanded version of the paper and as the latter was published first, some of the material from it has been reproduced directly. For paragraphs reproduced directly, we indent the text, place it in quotations and cite \citep{Blecher_2016} after the quotation. In addition, notes have been made at the beginning of certain sections or in the captions of figures to denote reproduction of material from our paper.
+%  \vspace{55pt}
+ 
+% Tariq Dylan Blecher
+%  \clearpage
+%   \topskip0pt
+%   \vspace*{\fill}
+%     \begin{center}
+%      \huge
+% %      The {\sc meqsilhouette} source code is at present still proprietary of SKA SA as in hence unavailable to the public at the time of writing. However, we do include an appendix which details installation and usage as reference for private or future public use.
+%     \end{center}
+  \vspace*{\fill}
+\tableofcontents
+\phantomsection
+\listoffigures
+\addcontentsline{toc}{chapter}{\listfigurename}
+\listoftables
+\addcontentsline{toc}{chapter}{\listtablename}

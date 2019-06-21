@@ -1,0 +1,11 @@
+COMMAND OBJECT po_single_face_scatterer_SR get_currents ( source :  &
+sequence(ref(band1_pattern_450MHz)), auto_convergence_of_po : on,  &
+convergence_on_scatterer : sequence(ref(MR))) cmd_1 
+COMMAND OBJECT po_single_face_scatterer_MR get_currents ( source :  &
+sequence(ref(po_single_face_scatterer_SR)), auto_convergence_of_po : on,  &
+convergence_on_output_grid : sequence(ref(spherical_cut))) cmd_2 
+COMMAND OBJECT spherical_cut get_field ( source :  &
+sequence(ref(po_single_face_scatterer_MR))) cmd_3 
+COMMAND OBJECT spherical_grid add_field ( source :  &
+sequence(ref(po_single_face_scatterer_SR), ref(band1_pattern_450MHz))) cmd_4 
+QUIT 

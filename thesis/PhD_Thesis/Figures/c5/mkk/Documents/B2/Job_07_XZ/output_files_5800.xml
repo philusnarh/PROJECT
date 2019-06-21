@@ -1,0 +1,13 @@
+<OutputFiles>
+ <File Format="Text" Path="Job_07_XZ.tci" Type="tci" Object="unknown" Hash="376656d70518d01d6961164a2cf22924"/>
+ <File Format="Text" Path="Job_07_XZ.tor" Type="tor" Object="unknown" Hash="b27ca355f3fbbbbf11b39489ff3915ec"/>
+ <File Format="Text" Path="Job_07_XZ.out" Type="out" Object="unknown" Hash="2cf956a48ed532b73b4f899cbb338892"/>
+ <File Format="Ticra" Path="spherical_grid.grd" Quantity="E" Type="Grid:Spherical" Object="spherical_grid" Hash="a6da9e23eb2c3aa053d7c31e54d46e31">
+  <Parameter Values=" 0.950000000000000, 0.990500000000000, 1.03100000000000, 1.07150000000000, 1.11200000000000, 1.15250000000000, 1.19300000000000, 1.23350000000000, 1.27400000000000, 1.31450000000000, 1.35500000000000, 1.39550000000000, 1.43600000000000, 1.47650000000000, 1.51700000000000, 1.55750000000000, 1.59800000000000, 1.63850000000000, 1.67900000000000, 1.71950000000000, 1.76000000000000" Unit="GHz" Name="Frequency"/>
+  <Parameter Values="[-3.00000000000000;3.00000000000000;256]" Unit="deg" Name="El"/>
+  <Parameter Values="[-3.00000000000000;3.00000000000000;256]" Unit="deg" Name="Az"/>
+  <Scan Type="elevation_over_azimuth"/>
+ </File>
+ <File Format="Text" Path="comments.txt" Type="Comments"/>
+ <File Format="Text" Path="screenoutput.txt" Type="Screen"/>
+</OutputFiles>

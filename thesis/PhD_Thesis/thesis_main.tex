@@ -1,0 +1,128 @@
+\documentclass[oneside,12pt,openany]{book}
+
+\usepackage[utf8x]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{aas_macros}
+\usepackage[space]{grffile}
+\usepackage{latexsym}
+\usepackage{IEEEtrantools}
+\usepackage{longtable}
+\usepackage{multirow,booktabs}
+\usepackage{amsfonts,amsmath,amssymb}
+\usepackage[numbers]{natbib}
+\usepackage{tabularx}
+% \usepackage[backend=bibtex,style=numeric,natbib=true]{biblatex}
+% \usepackage[style=numeric,natbib=true]{biblatex}
+
+% \usepackage[natbib, style=apa]{biblatex}
+% \usepackage[backend=biber,style=ieee, maxnames=10]{biblatex}
+% \usepackage[backend=bibtex,style=authoryear,natbib=true]{biblatex} 
+\setcitestyle{square}
+\usepackage{url}
+\usepackage{hyperref}
+% \usepackage[colorlinks,citecolor=blue]{hyperref}
+\usepackage{longtable}
+\usepackage[onehalfspacing]{setspace}
+\hypersetup{colorlinks=true,pdfborder={0 0 0},linkcolor=blue,citecolor=blue }
+% \usepackage{fullpage}
+% \usepackage{caption}
+% \renewcommand{\textfraction}{0.05} 
+%%
+\usepackage[autostyle=true]{csquotes}
+% \usepackage{titlesec}
+\usepackage{placeins}
+\usepackage{subcaption}
+\graphicspath{{Figures/}} % Specifies the directory where pictures are stored
+\usepackage[labelfont=bf]{caption}
+\usepackage{listings}
+\usepackage{float}
+\usepackage{enumitem}
+\usepackage[toc,page]{appendix}
+\newcommand\theo[1]{\textcolor{magenta}{#1}}
+% \usepackage{bm}
+% \usepackage{flafter}
+% \usepackage[left=5cm,top=2.0cm,bottom=1.5cm,right=2cm,bindingoffset=.5cm]{geometry}
+% \usepackage[top=2cm, bottom=2cm, outer=1cm, inner=2.1cm, headsep=14pt]{geometry}
+\usepackage[paper=a4paper,top=2.5cm, bottom=2cm, outer=3.8cm, inner=2.5cm, bindingoffset=.5cm]{geometry}
+% \geometry{
+% 	paper=a4paper, % Change to letterpaper for US letter
+% 	inner=2.5cm, % Inner margin
+% 	outer=3.8cm, % Outer margin
+% 	bindingoffset=.5cm, % Binding offset
+% 	top=1.5cm, % Top margin
+% 	bottom=1.5cm, % Bottom margin
+% 	%showframe, % Uncomment to show how the type block is set on the page
+% }
+% \usepackage{fancyhdr} 
+% \fancyhf{}
+% \cfoot{\thepage}
+% \pagestyle{fancy}
+
+\usepackage{fancyhdr}
+\renewcommand{\chaptermark}[1]{\markboth{#1}{}}
+\renewcommand{\sectionmark}[1]{\markright{#1}}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{\thepage}
+\fancyhead[LO]{\itshape\nouppercase{\rightmark}}
+\fancyhead[RE]{\itshape\nouppercase{\leftmark}}
+% \fancyhead[LO]{\nouppercase{\rightmark}}
+% \fancyhead[RE]{\nouppercase{\leftmark}}
+\renewcommand{\headrulewidth}{1pt}
+
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+% \DeclareMathOperator{\sinc}{sinc}
+% \DeclarePairedDelimiter\ceil{\lceil}{\rceil}
+% \DeclarePairedDelimiter\floor{\lfloor}{\rfloor}
+% \usepackage[colorlinks=false,linkcolor=blue]{hyperref}%
+%%
+\captionsetup[table]{skip=10pt}
+\newcommand{\bm}{\boldsymbol}
+% \newcommand\numberthis{\addtocounter{equation}{1}\tag{\theequation}}
+% \newcommand{\etal}{\textit{et al.}}
+% \def\nl{\\\hline}
+
+\let\cleardoublepage\clearpage
+\DeclareMathOperator{\sinc}{sinc}
+\begin{document}
+
+\frontmatter
+\input{preamble}
+\mainmatter % Begin numeric (1,2,3...) page numbering
+% \pagestyle{fancy} % Return the page headers back to the "thesis" style
+\input{chapters/c1/Chapter1}
+\input{chapters/c2/Chapter2}
+\input{chapters/c3/Chapter3}
+\input{chapters/c4/Chapter4}
+\input{chapters/c5/Chapter5}
+\input{chapters/c6/Chapter6}
+\input{chapters/c7/Chapter7}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff01.tex}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff02.tex}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff03.tex}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff04.tex}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff05.tex}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff06.tex}
+% \input{/home/tan/Documents/New_Thesis/Msc-thesis/chap/diff07.tex}
+% \input{Theory}
+% \input{Implementation}
+% \input{Results}
+% \input{Conclusion}
+% \appendix
+\input{Appendix}
+\backmatter
+% \bibliography{thesis} 
+\bibliography{references1} %refnew}
+% \bibliographystyle{plainnat}
+% \bibliographystyle{abbrvnat}
+% \bibliographystyle{newapa} 
+% \bibliographystyle{IEEEtran}
+% \bibliographystyle{apalike}
+%  \bibliographystyle{IEEEtran}
+\bibliographystyle{mnras}
+% \printbibliography[heading=bibintoc]
+\addcontentsline{toc}{chapter}{Bibliography}
+
+\end{document}

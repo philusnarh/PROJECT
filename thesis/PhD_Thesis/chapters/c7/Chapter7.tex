@@ -1,0 +1,47 @@
+\chapter{Conclusions and Recommendations} % Main chapter title
+
+\label{Chapter7} % For referencing the chapter elsewhere, use \ref{Chapter1} 
+
+IM is very sensitive to the aggregate line emission of galaxies other than the limiting magnitude of traditional galaxy surveys,
+which focus on only discrete sources whose emission lies above some flux threshold, defined within a limited aperture. 
+As such it represents a promising technique for statistical studies of galaxies that are faint. However, to extract the meaningful information we have
+to address the exact subtraction of the foreground continuum signal from Galactic and extra-galactic radio sources.
+% the confusion problems caused by interloping lines from foreground galaxies.
+The main focus of this work is to develop IM techniques for mapping out primary beams of a radio telescope and then, introduce realistic errors to perturb these modelled beams.
+We then attempt a correction and calibration of these distorted modelled beams and ultimately, use the final data for IM experiments. Thus, we use
+these modelled beams to simulate  the full-sky polarization maps and then, determine the amount of foregrounds that have corrupted the total intensity due to 
+polarization leakage and errors in the primary beams which have not been accounted for. Therefore, the two critical things the study addresses are: 
+\begin{enumerate}[label=(\roman*)]
+ \item the contribution of polarization leakage to the measured HI and CO power spectrum, given some more or less realistic primary beams; and \label{itm:first}
+ \item the uncertainty on the estimate of~\ref{itm:first} introduced by unmodelled perturbations in the primary beam.
+\end{enumerate}
+
+\noindent The following are some of the main findings of the research:
+\begin{itemize}
+% \item  The IXR computed for the SKA1-mid shows that the angular separation for which the magnitude of the beam pattern decreases is approximately $-20$ dB 
+% from the peak of the main beam.
+\item A realistic primary beam pattern can be simulated with the {\tt OSKAR} software by modelling a single dish as a collection of dipoles, such that the orientation 
+of the dipoles are uniformly distributed across the radius of the dish.
+\item Zernike fitting is a good model to reconstruct primary beams especially at Bands $1$ and $2$ hence, a very useful tool for IM experiments . 
+\item If we consider a correct model of the primary beam, then the intrinsic partial leakage of linear polarization ($|Q + iU|_{T} \longrightarrow I$) is given at $\approx 1.0 \%$, 
+hence, making it possible to evaluate the angular spectrum of both CO and $21$ cm  at a multipole moment of $l \lesssim 50$  which agrees with when we correct for
+the beam errors in Stokes $I$. However, this is contrary if no beam correction is made.
+\item Convolution is also a very good technique for IM experiments since we can use this approach to measure total intensity of a signal. 
+\item CO IM is more difficult to perform as compared to HI IM, because this type of experiment is observed at high frequencies and when an antenna has a very large gain,
+the beamwidth is also very small and the antenna requires very careful control over its position.
+\end{itemize}
+%%
+
+\noindent Future expansion of this work is as follows:
+\begin{itemize}
+ \item Use the PCA and Spherical harmonics models of MeerKAT L-band primary beams that are discussed in \citep{asad2018} to perform IM experiment and valid our existing results.
+ 
+ \item Explore other beam distortions schemes such as dish mis-alignment and secondary blockage (supporting frames) to give a better understanding of the primary beam effects on 
+ IM.
+ 
+ \item Adopt recent techniques such as deep learning algorithms to also investigate the potential of IM experiments.
+\end{itemize}
+
+
+\noindent  In short, with a good model of the primary beams we can actually estimate the amount of foregrounds that leak from intensity to polarization.
+

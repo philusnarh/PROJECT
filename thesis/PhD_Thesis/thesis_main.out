@@ -1,0 +1,79 @@
+\BOOKMARK [0][-]{chapter*.1}{Statement of Originality}{}% 1
+\BOOKMARK [0][-]{chapter*.2}{Publications}{}% 2
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 3
+\BOOKMARK [0][-]{chapter*.4}{Acknowledgements}{}% 4
+\BOOKMARK [0][-]{chapter*.7}{List of Figures}{}% 5
+\BOOKMARK [0][-]{chapter*.8}{List of Tables}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{The 21 cm Radio Emission Line}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{HI Intensity Mapping}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{Significance of Intensity Mapping Techniques}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{Problem Identification}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.5}{Research Objective}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.6}{Delimitation}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.7}{Rationale and Motivation}{chapter.1}% 14
+\BOOKMARK [1][-]{section.1.8}{Thesis Layout}{chapter.1}% 15
+\BOOKMARK [0][-]{chapter.2}{Radio Antennas and Interferometry}{}% 16
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 17
+\BOOKMARK [1][-]{section.2.2}{Antenna Parameters}{chapter.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.1}{Antenna Field Regions}{section.2.2}% 19
+\BOOKMARK [2][-]{subsection.2.2.2}{Radiation Patterns}{section.2.2}% 20
+\BOOKMARK [2][-]{subsection.2.2.3}{Radiation Intensity}{section.2.2}% 21
+\BOOKMARK [2][-]{subsection.2.2.4}{Gain}{section.2.2}% 22
+\BOOKMARK [1][-]{section.2.3}{EM Wave Polarization}{chapter.2}% 23
+\BOOKMARK [2][-]{subsection.2.3.1}{Derivation of the Stokes Polarization Parameters}{section.2.3}% 24
+\BOOKMARK [1][-]{section.2.4}{Antenna Arrays}{chapter.2}% 25
+\BOOKMARK [2][-]{subsection.2.4.1}{Mathematical Formulation of Antenna Array}{section.2.4}% 26
+\BOOKMARK [2][-]{subsection.2.4.2}{Beam-forming}{section.2.4}% 27
+\BOOKMARK [2][-]{subsection.2.4.3}{Types of Radio Arrays}{section.2.4}% 28
+\BOOKMARK [3][-]{subsubsection.2.4.3.1}{Phased-Array Feeds \(PAFs\)}{subsection.2.4.3}% 29
+\BOOKMARK [3][-]{subsubsection.2.4.3.2}{Transiting Arrays}{subsection.2.4.3}% 30
+\BOOKMARK [3][-]{subsubsection.2.4.3.3}{Aperture Arrays}{subsection.2.4.3}% 31
+\BOOKMARK [1][-]{section.2.5}{Power gained from Radio Sources}{chapter.2}% 32
+\BOOKMARK [1][-]{section.2.6}{Basic Concepts of Radio Interferometry}{chapter.2}% 33
+\BOOKMARK [0][-]{chapter.3}{Radio Foregrounds and Rotation Measure Synthesis}{}% 34
+\BOOKMARK [1][-]{section.3.1}{Galactic Foreground}{chapter.3}% 35
+\BOOKMARK [2][-]{subsection.3.1.1}{Diffuse Galactic Synchrotron Emission}{section.3.1}% 36
+\BOOKMARK [1][-]{section.3.2}{Faraday Rotation Measure Synthesis}{chapter.3}% 37
+\BOOKMARK [1][-]{section.3.3}{Simulation}{chapter.3}% 38
+\BOOKMARK [0][-]{chapter.4}{Investigating Primary Beam Effects on HI Intensity Mapping}{}% 39
+\BOOKMARK [1][-]{section.4.1}{Modelling the Primary Beam }{chapter.4}% 40
+\BOOKMARK [1][-]{section.4.2}{KAT-7 Beam Pattern Simulation}{chapter.4}% 41
+\BOOKMARK [2][-]{subsection.4.2.1}{Jones and Mueller matrices}{section.4.2}% 42
+\BOOKMARK [2][-]{subsection.4.2.2}{Primary Beam Perturbation}{section.4.2}% 43
+\BOOKMARK [1][-]{section.4.3}{Convolution of Foreground Maps}{chapter.4}% 44
+\BOOKMARK [2][-]{subsection.4.3.1}{Angular Power Spectrum}{section.4.3}% 45
+\BOOKMARK [1][-]{section.4.4}{Results and Analysis}{chapter.4}% 46
+\BOOKMARK [1][-]{section.4.5}{Conclusions}{chapter.4}% 47
+\BOOKMARK [0][-]{chapter.5}{MeerKAT L-Band Primary Beams: Effects of HI Intensity Mapping}{}% 48
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 49
+\BOOKMARK [1][-]{section.5.2}{Methodology}{chapter.5}% 50
+\BOOKMARK [2][-]{subsection.5.2.1}{Mathematical Basis of Zernike Polynomials}{section.5.2}% 51
+\BOOKMARK [2][-]{subsection.5.2.2}{Numerical Computation of Zernike Coefficients}{section.5.2}% 52
+\BOOKMARK [2][-]{subsection.5.2.3}{Spatial Representation}{section.5.2}% 53
+\BOOKMARK [2][-]{subsection.5.2.4}{Spectral Representation}{section.5.2}% 54
+\BOOKMARK [1][-]{section.5.3}{Results and Discussion}{chapter.5}% 55
+\BOOKMARK [1][-]{section.5.4}{Conclusion}{chapter.5}% 56
+\BOOKMARK [0][-]{chapter.6}{SKA1-mid Multiband Primary Beams: Effects of HI and CO Intensity Mapping Experiments}{}% 57
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 58
+\BOOKMARK [1][-]{section.6.2}{GRASP Beam Measurement}{chapter.6}% 59
+\BOOKMARK [2][-]{subsection.6.2.1}{Model Specification}{section.6.2}% 60
+\BOOKMARK [3][-]{subsubsection.6.2.1.1}{Reflector Antenna Models}{subsection.6.2.1}% 61
+\BOOKMARK [3][-]{subsubsection.6.2.1.2}{Feed Models}{subsection.6.2.1}% 62
+\BOOKMARK [1][-]{section.6.3}{Modelling EM Beams}{chapter.6}% 63
+\BOOKMARK [2][-]{subsection.6.3.1}{ Fitting 2D Zernike Polynomials on EM Beams}{section.6.3}% 64
+\BOOKMARK [3][-]{subsubsection.6.3.1.1}{Spatial Representation}{subsection.6.3.1}% 65
+\BOOKMARK [3][-]{subsubsection.6.3.1.2}{Spectral Representation}{subsection.6.3.1}% 66
+\BOOKMARK [2][-]{subsection.6.3.2}{Model Beam Perturbation}{section.6.3}% 67
+\BOOKMARK [2][-]{subsection.6.3.3}{Intrinsic Cross-Polarisation \(IXR\)}{section.6.3}% 68
+\BOOKMARK [1][-]{section.6.4}{The CO Power Spectrum}{chapter.6}% 69
+\BOOKMARK [1][-]{section.6.5}{Results and Analysis}{chapter.6}% 70
+\BOOKMARK [1][-]{section.6.6}{Conclusion}{chapter.6}% 71
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Recommendations}{}% 72
+\BOOKMARK [0][-]{section*.71}{Appendices}{}% 73
+\BOOKMARK [0][-]{Appendix.1.A}{OSKAR BEAMPATTERN AND FOREGROUND SIMULATIONS}{}% 74
+\BOOKMARK [1][-]{section.1.A.1}{Modelled and measured beams}{Appendix.1.A}% 75
+\BOOKMARK [1][-]{section.1.A.2}{Measured Full-sky maps}{Appendix.1.A}% 76
+\BOOKMARK [0][-]{Appendix.1.B}{Zernike Polynomial Sequence}{}% 77
+\BOOKMARK [1][-]{section.1.B.1}{Orthonormality}{Appendix.1.B}% 78
+\BOOKMARK [0][-]{chapter*.78}{Bibliography}{}% 79
